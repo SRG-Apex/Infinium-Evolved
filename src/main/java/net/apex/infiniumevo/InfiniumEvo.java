@@ -1,6 +1,6 @@
 package net.apex.infiniumevo;
 
-import com.apex.infiniumevo.item.ModItems;
+import net.apex.infiniumevo.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
