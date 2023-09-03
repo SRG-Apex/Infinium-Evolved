@@ -1,7 +1,6 @@
-package com.apex.infiniumevo.item;
+package net.apex.infiniumevo.item;
 
-import com.apex.infiniumevo.InfiniumEvo;
-import net.minecraft.world.item.CreativeModeTab;
+import net.apex.infiniumevo.InfiniumEvo;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

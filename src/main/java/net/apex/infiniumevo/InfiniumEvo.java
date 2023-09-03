@@ -1,4 +1,4 @@
-package com.apex.infiniumevo;
+package net.apex.infiniumevo;
 
 import com.apex.infiniumevo.item.ModItems;
 import com.mojang.logging.LogUtils;

@@ -1,4 +1,4 @@
-package com.apex.infiniumevo.item;
+package net.apex.infiniumevo.item;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
