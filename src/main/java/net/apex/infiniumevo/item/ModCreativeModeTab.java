@@ -23,7 +23,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab IE_ITEMS=new CreativeModeTab("items") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.TESTITEM.get());
+            return new ItemStack(ModItems.INFINIUM.get());
         }
     };
 

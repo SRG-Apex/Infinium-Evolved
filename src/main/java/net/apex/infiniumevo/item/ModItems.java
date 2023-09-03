@@ -11,14 +11,20 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, InfiniumEvo.MOD_ID);
 
-    // Define your Items Here
+
 
     // Template Item------------------------------------------
     public static final RegistryObject<Item> TESTITEM = ITEMS.register("testitem",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DEV_TAB)));
 
     // -------------------------------------------------------
+    // Define your Items Here
 
+    //Resources / Infinium Ingo
+    public static final RegistryObject<Item> INFINIUM = ITEMS.register("infinium",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
+    public static final RegistryObject<Item> RAWINFINIUM = ITEMS.register("rawinfinium",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
 
 
     public static void register(IEventBus eventBus) {

@@ -1,5 +1,7 @@
 {
   "item.infiniumevo.testitem": "Test Item",
+  "item.infiniumevo.infinium": "Infinium Ingot",
+  "item.infiniumevo.rawinfinium": "Raw Infinium",
   "itemGroup.devtab": "Devloper Tab",
   "itemGroup.items": "IE Items",
   "itemGroup.blocks": "IE Blocks",
