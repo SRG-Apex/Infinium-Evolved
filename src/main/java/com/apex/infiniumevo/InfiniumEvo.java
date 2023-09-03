@@ -1,5 +1,4 @@
 package com.apex.infiniumevo;
-// random comment
 
 import com.apex.infiniumevo.item.ModItems;
 import com.mojang.logging.LogUtils;
