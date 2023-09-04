@@ -1,5 +1,6 @@
 package net.apex.infiniumevo;
 
+import net.apex.infiniumevo.block.ModBlocks;
 import net.apex.infiniumevo.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -26,6 +27,7 @@ public class InfiniumEvo
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
