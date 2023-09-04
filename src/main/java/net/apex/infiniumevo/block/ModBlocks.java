@@ -22,13 +22,14 @@ public class ModBlocks {
     // template block---------------------
     public static final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
             .instabreak()
-            .strength(6f)
-
             ),
             ModCreativeModeTab.DEV_TAB);
 
     //add actual blocks here
-
+    public static final RegistryObject<Block> INFINIUM_BLOCK = registerBlock("infinium_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
     //handlers
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
        RegistryObject<T> toReturn = BLOCKS.register(name, block);

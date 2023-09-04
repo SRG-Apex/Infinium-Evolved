@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "infiniumevo:infinium"
+    }
+  },
+  "result": {
+    "item": "infiniumevo:infinium_block"
+  }
+}
