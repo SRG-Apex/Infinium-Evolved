@@ -25,15 +25,14 @@ public class InfiniumEvo
     public InfiniumEvo()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        // Register the Deferred Register to the mod event bus so items get registered
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-//        // Register the Deferred Register to the mod event bus so blocks get registered
-//        BLOCKS.register(modEventBus);
+//        // Register the Deferred Register to the mod event bus so items and blocks get registered
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 //
 
         // Register ourselves for server and other game events we are interested in

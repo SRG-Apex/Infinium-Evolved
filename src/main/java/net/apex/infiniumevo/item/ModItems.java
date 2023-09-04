@@ -23,7 +23,7 @@ public class ModItems {
     //Resources / Infinium Ingo
     public static final RegistryObject<Item> INFINIUM = ITEMS.register("infinium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
-    public static final RegistryObject<Item> RAWINFINIUM = ITEMS.register("rawinfinium",
+    public static final RegistryObject<Item> RAWINFINIUM = ITEMS.register("raw_infinium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
 
 

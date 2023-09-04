@@ -28,6 +28,7 @@ public class ModBlocks {
     //add actual blocks here
     public static final RegistryObject<Block> INFINIUM_BLOCK = registerBlock("infinium_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f)
+                    .requiresCorrectToolForDrops()
             ),
             ModCreativeModeTab.IE_BLOCKS);
     //handlers

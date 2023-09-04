@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:infinium_block"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:infinium",
+    "count": 9
+  }
+}
