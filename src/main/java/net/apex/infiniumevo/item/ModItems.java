@@ -20,7 +20,7 @@ public class ModItems {
     // -------------------------------------------------------
     // Define your Items Here
 
-    //Resources / Infinium Ingo
+    //Resources / Infinium Ingot
     public static final RegistryObject<Item> INFINIUM = ITEMS.register("infinium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
     public static final RegistryObject<Item> RAWINFINIUM = ITEMS.register("raw_infinium",

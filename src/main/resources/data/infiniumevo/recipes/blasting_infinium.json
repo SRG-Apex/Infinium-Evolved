@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "infiniumevo:raw_infinium"
+    },
+    "result": "infiniumevo:infinium",
+    "experience": 0.1,
+    "cookingtime": 100
+}

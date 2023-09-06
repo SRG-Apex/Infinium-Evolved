@@ -31,6 +31,12 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             ),
             ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> INFINIUM_ORE = registerBlock("infinium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
     //handlers
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
        RegistryObject<T> toReturn = BLOCKS.register(name, block);
