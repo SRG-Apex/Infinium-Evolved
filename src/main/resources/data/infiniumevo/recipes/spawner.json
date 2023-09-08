@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#I#",
+        "INI",
+        "#I#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:echo_shard"
+        },
+        "I": {
+            "item": "minecraft:iron_bars"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "minecraft:spawner",
+        "count": 1
+    }
+}

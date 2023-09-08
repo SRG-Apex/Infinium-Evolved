@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:beef"
+    },
+    "1": {
+      "item": "minecraft:bone"
+    },
+    "2": {
+      "item": "minecraft:beef"
+    },
+    "3": {
+      "item": "minecraft:bone"
+    },
+    "4": {
+      "item": "infiniumevo:egg_core"
+    },
+    "5": {
+      "item": "minecraft:bone"
+    },
+    "6": {
+      "item": "minecraft:beef"
+    },
+    "7": {
+      "item": "minecraft:bone"
+    },
+    "8": {
+      "item": "minecraft:beef"
+    }
+  },
+  "result": {
+    "item": "minecraft:wolf_spawn_egg",
+    "count": 1
+  }
+}

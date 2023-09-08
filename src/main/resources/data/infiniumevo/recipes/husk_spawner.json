@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "SE#",
+        "SS#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "S": {
+            "item": "minecraft:sand"
+        },
+        "E": {
+            "item": "infiniumevo:egg_core"
+        }
+    },
+    "result": {
+        "item": "minecraft:husk_spawn_egg",
+        "count": 1
+    }
+}

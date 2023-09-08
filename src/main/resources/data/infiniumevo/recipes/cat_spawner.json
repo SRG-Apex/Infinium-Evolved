@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:string"
+    },
+    "1": {
+      "tag": "minecraft:fishes"
+    },
+    "2": {
+      "item": "minecraft:string"
+    },
+    "3": {
+      "tag": "minecraft:fishes"
+    },
+    "4": {
+      "item": "infiniumevo:egg_core"
+    },
+    "5": {
+      "tag": "minecraft:fishes"
+    },
+    "6": {
+      "item": "minecraft:string"
+    },
+    "7": {
+      "tag": "minecraft:fishes"
+    },
+    "8": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "minecraft:cat_spawn_egg",
+    "count": 1
+  }
+}

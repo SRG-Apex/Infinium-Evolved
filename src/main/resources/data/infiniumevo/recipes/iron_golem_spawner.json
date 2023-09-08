@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "IEI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "E": {
+      "item": "infiniumevo:egg_core"
+    },
+    "P": {
+      "item": "minecraft:poppy"
+    }
+  },
+  "result": {
+    "item": "minecraft:iron_golem_spawn_egg",
+    "count": 1
+  }
+}

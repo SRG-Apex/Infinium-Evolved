@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#E#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:ink_sac"
+        },
+        "E": {
+            "item": "infiniumevo:egg_core"
+        }
+    },
+    "result": {
+        "item": "minecraft:squid_spawn_egg",
+        "count": 1
+    }
+}

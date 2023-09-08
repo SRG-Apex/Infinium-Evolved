@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "gbg",
+        "geg",
+        "ggg"
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:mutton"
+        },
+        "b": {
+            "item": "minecraft:white_wool"
+        },
+        "e": {
+            "item": "infiniumevo:egg_core"
+        }
+    },
+    "result": {
+        "item": "minecraft:sheep_spawn_egg",
+        "count": 1
+    }
+}

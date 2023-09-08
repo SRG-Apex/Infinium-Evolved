@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "# #",
+        "P P"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "S": {
+            "item": "minecraft:string"
+        },
+        "P": {
+            "item": "minecraft:popped_chorus_fruit"
+        }
+    },
+    "result": {
+        "item": "minecraft:elytra",
+        "count": 1
+    }
+}

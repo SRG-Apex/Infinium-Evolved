@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "#E#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:emerald"
+        },
+        "S": {
+            "item": "minecraft:saddle"
+        },
+        "E": {
+            "item": "infiniumevo:egg_core"
+        }
+    },
+    "result": {
+        "item": "minecraft:ravager_spawn_egg",
+        "count": 1
+    }
+}

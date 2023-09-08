@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#C#",
+        "#E#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:emerald"
+        },
+        "C": {
+            "item": "minecraft:crossbow"
+        },
+        "E": {
+            "item": "infiniumevo:egg_core"
+        }
+    },
+    "result": {
+        "item": "minecraft:pillager_spawn_egg",
+        "count": 1
+    }
+}

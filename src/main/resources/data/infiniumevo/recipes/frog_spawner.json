@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#OV",
+        "SES",
+        "SSS"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:pearlescent_froglight"
+        },
+        "O": {
+            "item": "minecraft:ochre_froglight"
+        },
+        "V": {
+            "item": "minecraft:verdant_froglight"
+        },
+        "S": {
+            "item": "minecraft:slime_ball"
+        },
+        "E": {
+            "item": "infiniumevo:egg_core"
+        }
+    },
+    "result": {
+        "item": "minecraft:frog_spawn_egg",
+        "count": 1
+    }
+}

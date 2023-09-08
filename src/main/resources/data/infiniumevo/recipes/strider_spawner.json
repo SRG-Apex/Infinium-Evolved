@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SSS",
+        "LES",
+        "LLS"
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:lava_bucket"
+        },
+        "S": {
+            "item": "minecraft:string"
+        },
+        "E": {
+            "item": "infiniumevo:egg_core"
+        }
+    },
+    "result": {
+        "item": "minecraft:strider_spawn_egg",
+        "count": 1
+    }
+}

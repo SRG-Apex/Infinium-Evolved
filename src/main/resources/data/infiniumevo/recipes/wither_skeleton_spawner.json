@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "#E#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:coal"
+        },
+        "E": {
+            "item": "infiniumevo:egg_core"
+    },
+ "S": {
+            "item": "minecraft:wither_skeleton_skull"
+        }
+    },
+    "result": {
+        "item": "minecraft:wither_skeleton_spawn_egg",
+        "count": 1
+    }
+}

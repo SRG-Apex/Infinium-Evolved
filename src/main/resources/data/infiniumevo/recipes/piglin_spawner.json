@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "gbg",
+        "geg",
+        "ggg"
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "b": {
+            "item": "minecraft:blaze_powder"
+        },
+        "e": {
+            "item": "infiniumevo:egg_core"
+        }
+    },
+    "result": {
+        "item": "minecraft:piglin_spawn_egg",
+        "count": 1
+    }
+}

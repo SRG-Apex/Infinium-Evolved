@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:sweet_berries"
+    },
+    "1": {
+      "item": "minecraft:sweet_berries"
+    },
+    "2": {
+      "item": "minecraft:sweet_berries"
+    },
+    "3": {
+      "item": "minecraft:sweet_berries"
+    },
+    "4": {
+      "item": "infiniumevo:egg_core"
+    },
+    "5": {
+      "item": "minecraft:sweet_berries"
+    },
+    "6": {
+      "item": "minecraft:sweet_berries"
+    },
+    "7": {
+      "item": "minecraft:sweet_berries"
+    },
+    "8": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "result": {
+    "item": "minecraft:fox_spawn_egg",
+    "count": 1
+  }
+}

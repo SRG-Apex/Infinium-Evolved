@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#D#",
+        "#E#",
+        "#D#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_block"
+        },
+        "D": {
+            "item": "minecraft:dragon_breath"
+        },
+        "E": {
+            "item": "minecraft:emerald_block"
+        }
+    },
+    "result": {
+        "item": "minecraft:totem_of_undying",
+        "count": 1
+    }
+}

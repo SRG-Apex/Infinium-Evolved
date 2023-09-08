@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "IE#",
+        "II#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:bone"
+        },
+        "I": {
+            "item": "minecraft:ice"
+        },
+        "E": {
+            "item": "infiniumevo:egg_core"
+        }
+    },
+    "result": {
+        "item": "minecraft:stray_spawn_egg",
+        "count": 1
+    }
+}

@@ -27,6 +27,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
 
 
+    public static final RegistryObject<Item> EGG_CORE = ITEMS.register("egg_core",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

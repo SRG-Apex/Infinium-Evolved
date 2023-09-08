@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:feather"
+    },
+    "1": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "2": {
+      "item": "minecraft:feather"
+    },
+    "3": {
+      "item": "minecraft:feather"
+    },
+    "4": {
+      "item": "infiniumevo:egg_core"
+    },
+    "5": {
+      "item": "minecraft:feather"
+    },
+    "6": {
+      "item": "minecraft:feather"
+    },
+    "7": {
+      "item": "minecraft:feather"
+    },
+    "8": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "minecraft:parrot_spawn_egg",
+    "count": 1
+  }
+}
