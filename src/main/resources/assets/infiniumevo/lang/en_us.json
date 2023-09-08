@@ -3,12 +3,18 @@
   "block.infiniumevo.test_block": "Test Block",
   "item.infiniumevo.infinium": "Infinium Ingot",
   "item.infiniumevo.raw_infinium": "Raw Infinium",
+  "item.infiniumevo.infinium_sword": "Infinium Sword",
+  "item.infiniumevo.infinium_pickaxe": "Infinium Pickaxe",
+  "item.infiniumevo.infinium_spade": "Infinium Spade",
+  "item.infiniumevo.infinium_axe": "Infinium Axe",
+  "item.infiniumevo.infinium_hoe": "Infinium Hoe",
   "item.infiniumevo.egg_core": "Egg Core",
   "block.infiniumevo.infinium_block": "Infinium Block",
   "block.infiniumevo.infinium_ore": "Infinium Ore",
   "itemGroup.devtab": "Devloper Tab",
   "itemGroup.items": "IE Items",
   "itemGroup.blocks": "IE Blocks",
+  "itemGroup.tools": "IE Tools",
   "itemGroup.other": "IE Misc."
 
 

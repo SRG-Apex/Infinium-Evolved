@@ -1,7 +1,7 @@
 package net.apex.infiniumevo.item;
 
 import net.apex.infiniumevo.InfiniumEvo;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,11 +24,51 @@ public class ModItems {
     public static final RegistryObject<Item> INFINIUM = ITEMS.register("infinium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
     public static final RegistryObject<Item> RAWINFINIUM = ITEMS.register("raw_infinium",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+
+    // Infinium Tools
+    //
+    //
+    //
+    //
+    public static final RegistryObject<Item> INFINIUMSWORD = ITEMS.register("infinium_sword",
+            () -> new SwordItem(Tiers.NETHERITE,13,1f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+                    .durability(5000)
+            ));
+    public static final RegistryObject<Item> INFINIUMPICK = ITEMS.register("infinium_pickaxe",
+            () -> new PickaxeItem(Tiers.NETHERITE,8,-1.5f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+                    .durability(5000)
+            ));
+
+    public static final RegistryObject<Item> INFINIUMAXE = ITEMS.register("infinium_axe",
+            () -> new AxeItem(Tiers.NETHERITE,19,-2f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+                    .durability(5000)
+            ));
+    public static final RegistryObject<Item> INFINIUMSPADE = ITEMS.register("infinium_spade",
+            () -> new ShovelItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+                    .durability(5000)
+            ));
+
+    public static final RegistryObject<Item> INFINIUMHOE = ITEMS.register("infinium_hoe",
+            () -> new HoeItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+                    .durability(5000)
+            ));
+
+
 
 
     public static final RegistryObject<Item> EGG_CORE = ITEMS.register("egg_core",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+                    .stacksTo(16)
+            ));
 
 
     public static void register(IEventBus eventBus) {
