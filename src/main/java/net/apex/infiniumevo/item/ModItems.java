@@ -3,6 +3,7 @@ package net.apex.infiniumevo.item;
 import net.apex.infiniumevo.InfiniumEvo;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -20,7 +21,21 @@ public class ModItems {
     // -------------------------------------------------------
     // Define your Items Here
 
-    //Resources / Infinium Ingot
+    //Resources
+
+
+    // Crystalite
+    public static final RegistryObject<Item> CRYSTALITE = ITEMS.register("crystalite",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> CRYSTALITEPICK = ITEMS.register("crystalite_pickaxe",
+            ()-> new PickaxeItem(ModToolTiers.T5, 5, -1.5f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+
+
+            ));
+    // Infinium Ingot
     public static final RegistryObject<Item> INFINIUM = ITEMS.register("infinium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
     public static final RegistryObject<Item> RAWINFINIUM = ITEMS.register("raw_infinium",
@@ -29,36 +44,27 @@ public class ModItems {
             ));
 
     // Infinium Tools
-    //
-    //
-    //
-    //
     public static final RegistryObject<Item> INFINIUMSWORD = ITEMS.register("infinium_sword",
             () -> new SwordItem(Tiers.NETHERITE,13,1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
-                    .durability(5000)
             ));
     public static final RegistryObject<Item> INFINIUMPICK = ITEMS.register("infinium_pickaxe",
             () -> new PickaxeItem(Tiers.NETHERITE,8,-1.5f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
-                    .durability(5000)
             ));
 
     public static final RegistryObject<Item> INFINIUMAXE = ITEMS.register("infinium_axe",
             () -> new AxeItem(Tiers.NETHERITE,19,-2f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
-                    .durability(5000)
             ));
     public static final RegistryObject<Item> INFINIUMSPADE = ITEMS.register("infinium_spade",
             () -> new ShovelItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
-                    .durability(5000)
             ));
 
     public static final RegistryObject<Item> INFINIUMHOE = ITEMS.register("infinium_hoe",
             () -> new HoeItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
-                    .durability(5000)
             ));
 
 
@@ -68,6 +74,11 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
                     .stacksTo(16)
+            ));
+    public static final RegistryObject<Item> ADVANCED_TOOL_HANDLE = ITEMS.register("advanced_tool_handle",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+                    .stacksTo(1)
             ));
 
 
