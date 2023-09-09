@@ -26,6 +26,20 @@ public class ModBlocks {
             ModCreativeModeTab.DEV_TAB);
 
     //add actual blocks here
+    public static final RegistryObject<Block> CRYSTALITE_BLOCK = registerBlock("crystalite_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()
+
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> CRYSTALITE_ORE = registerBlock("crystalite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()
+
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
     public static final RegistryObject<Block> INFINIUM_BLOCK = registerBlock("infinium_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f)
                     .requiresCorrectToolForDrops()

@@ -22,6 +22,11 @@ public class ModItems {
     // Define your Items Here
 
     //Resources
+    public static final RegistryObject<Item> DREADSTEEL = ITEMS.register("dreadsteel_ingot",
+            ()-> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+
+            ));
 
 
     // Crystalite
@@ -32,7 +37,6 @@ public class ModItems {
     public static final RegistryObject<Item> CRYSTALITEPICK = ITEMS.register("crystalite_pickaxe",
             ()-> new PickaxeItem(ModToolTiers.T5, 5, -1.5f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
-
 
             ));
     // Infinium Ingot
