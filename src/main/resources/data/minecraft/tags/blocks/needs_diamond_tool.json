@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-
+    "infiniumevo:crystalite_ore",
+    "infiniumevo:crystalite_block"
 
 
   ]

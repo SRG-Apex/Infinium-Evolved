@@ -21,8 +21,48 @@ public class ModItems {
     // -------------------------------------------------------
     // Define your Items Here
 
+
+
     //Resources
 
+    //Steel Ingot
+    //Steel Machine Frame
+
+    //Enderite Dust
+    // Enderite Sword
+    // Enderite Pickaxe
+    // Enderite Axe
+    // Enderite Spade
+    // Enderite How
+    // Enderite Armor
+
+    public static final RegistryObject<Item> DREADSTEEL = ITEMS.register("dreadsteel_ingot",
+            ()-> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+
+            ));
+
+    public static final RegistryObject<Item> GRIMDIST = ITEMS.register("grim_dust",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+
+            ));
+
+    // Dreadsteel Pickaxe
+
+    // Reaper Scythe
+
+    // Dreadsteel Axe
+
+    // Dreadsteel Spade
+
+    // Dread Steel Hoe
+
+    // Dreadsteel Armor
+
+
+    // Titanium Ingot
+    // Titanium Machine Frame
 
     // Crystalite
     public static final RegistryObject<Item> CRYSTALITE = ITEMS.register("crystalite",
@@ -33,8 +73,18 @@ public class ModItems {
             ()-> new PickaxeItem(ModToolTiers.T5, 5, -1.5f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
 
-
             ));
+
+    //Crystalite Sword
+
+    //Crystalite Axe
+
+    //Crystalite Spade
+
+    // Crystalite Hoe
+
+    //Crystalite Armor
+
     // Infinium Ingot
     public static final RegistryObject<Item> INFINIUM = ITEMS.register("infinium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
@@ -67,7 +117,7 @@ public class ModItems {
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
-
+// Infinium Armor
 
 
     public static final RegistryObject<Item> EGG_CORE = ITEMS.register("egg_core",
@@ -80,6 +130,8 @@ public class ModItems {
                     .tab(ModCreativeModeTab.IE_ITEMS)
                     .stacksTo(1)
             ));
+
+
 
 
     public static void register(IEventBus eventBus) {
