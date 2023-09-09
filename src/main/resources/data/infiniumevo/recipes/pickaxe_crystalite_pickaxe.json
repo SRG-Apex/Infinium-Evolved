@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        " b ",
+        " c "
+    ],
+    "key": {
+        "a": {
+            "item": "infiniumevo:crystalite"
+        },
+   	"b": {
+            "item": "infiniumevo:advanced_tool_handle"
+        },
+    "c": {
+        "item": "minecraft:stick"
+    }
+    },
+    "result": {
+        "item": "infiniumevo:crystalite_pickaxe",
+        "count": 1
+    }
+}
