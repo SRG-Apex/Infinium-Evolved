@@ -24,6 +24,11 @@ public class ModItems {
 
 
     //Resources
+    public static final RegistryObject<Item> DREADSTEEL = ITEMS.register("dreadsteel_ingot",
+            ()-> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+
+            ));
 
     //Steel Ingot
     //Steel Machine Frame
