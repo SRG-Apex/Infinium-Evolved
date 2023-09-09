@@ -24,11 +24,7 @@ public class ModItems {
 
 
     //Resources
-    public static final RegistryObject<Item> DREADSTEEL = ITEMS.register("dreadsteel_ingot",
-            ()-> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.IE_ITEMS)
 
-            ));
 
     //Steel Ingot
     //Steel Machine Frame
@@ -47,11 +43,11 @@ public class ModItems {
 
             ));
 
-    public static final RegistryObject<Item> GRIMDIST = ITEMS.register("grim_dust",
-            () -> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.IE_ITEMS)
-
-            ));
+//    public static final RegistryObject<Item> GRIMDIST = ITEMS.register("grim_dust",
+//            () -> new Item(new Item.Properties()
+//                    .tab(ModCreativeModeTab.IE_ITEMS)
+//
+//            ));
 
     // Dreadsteel Pickaxe
 
