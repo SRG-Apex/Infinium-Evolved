@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:enderite_block"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:enderite_dust",
+    "count": 9
+  }
+}

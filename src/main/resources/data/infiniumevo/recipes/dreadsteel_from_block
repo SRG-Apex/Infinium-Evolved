@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:dreadsteel_block"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:dreadsteel_ingot",
+    "count": 9
+  }
+}

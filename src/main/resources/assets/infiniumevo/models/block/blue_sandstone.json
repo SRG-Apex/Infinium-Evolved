@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "infiniumevo:block/smooth_blue_sandstone",
+    "down": "infiniumevo:block/blue_sandstone_bottom",
+    "north": "infiniumevo:block/blue_sandstone",
+    "east": "infiniumevo:block/blue_sandstone",
+    "south": "infiniumevo:block/blue_sandstone",
+    "west": "infiniumevo:block/blue_sandstone"
+  }
+
+}

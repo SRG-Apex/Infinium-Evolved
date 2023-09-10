@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "infiniumevo:blue_sand"
+        },
+        {
+            "item": "infiniumevo:blue_sand"
+        },
+        {
+            "item": "infiniumevo:blue_sand"
+        },
+        {
+            "item": "infiniumevo:blue_sand"
+        }
+    ],
+    "result": {
+        "item": "infiniumevo:blue_sandstone",
+        "count": 1
+    }
+}

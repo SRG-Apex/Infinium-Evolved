@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "infiniumevo:redrock"
+        },
+        {
+            "item": "infiniumevo:redrock"
+        },
+        {
+            "item": "infiniumevo:redrock"
+        },
+        {
+            "item": "infiniumevo:redrock"
+        }
+    ],
+    "result": {
+        "item": "infiniumevo:redrock_bricks",
+        "count": 4
+    }
+}
