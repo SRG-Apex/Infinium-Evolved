@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-
+    "infiniumevo:redrock",
+    "infiniumevo:redrock_bricks",
+    "infiniumevo:cracked_redrock_bricks",
+    "infiniumevo:mossy_redrock_bricks",
+    "infiniumevo:blue_sand",
+    "infiniumevo:blue_sandstone",
+    "infiniumevo:smooth_blue_sandstone"
   ]
 }

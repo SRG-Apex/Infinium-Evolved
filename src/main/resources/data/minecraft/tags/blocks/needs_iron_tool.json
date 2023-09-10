@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-
-
+    "infiniumevo:steel_ore",
+    "infinium_evo:steel_block"
   ]
 }

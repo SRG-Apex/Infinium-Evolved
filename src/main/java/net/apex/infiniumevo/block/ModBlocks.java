@@ -94,42 +94,47 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.IE_BLOCKS);
 
-//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-//                    .requiresCorrectToolForDrops()
-//                    //Add other Properties Here
-//            ),
-//            ModCreativeModeTab.IE_BLOCKS);
-//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-//                    .requiresCorrectToolForDrops()
-//                    //Add other Properties Here
-//            ),
-//            ModCreativeModeTab.IE_BLOCKS);
-//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-//                    .requiresCorrectToolForDrops()
-//                    //Add other Properties Here
-//            ),
-//            ModCreativeModeTab.IE_BLOCKS);
-//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-//                    .requiresCorrectToolForDrops()
-//                    //Add other Properties Here
-//            ),
-//            ModCreativeModeTab.IE_BLOCKS);
-//
-//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-//                    .requiresCorrectToolForDrops()
-//                    //Add other Properties Here
-//            ),
-//            ModCreativeModeTab.IE_BLOCKS);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+    public static final RegistryObject<Block> REDROCK = registerBlock("redrock", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> REDROCK_BRICK = registerBlock("redrock_bricks", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> REDROCK_MOSSY = registerBlock("mossy_redrock_bricks", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> REDROCK_CRACKED = registerBlock("cracked_redrock_bricks", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> BLUE_SAND = registerBlock("blue_sand", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> BLUE_SANDSTONE = registerBlock("blue_sandstone", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> SMOOTH_BLUE_SANDSTONE = registerBlock("smooth_blue_sandstone", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
 
     //handlers
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

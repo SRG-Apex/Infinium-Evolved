@@ -4,8 +4,19 @@
     "infiniumevo:infinium_block",
     "infiniumevo:infinium_ore",
     "infiniumevo:crystalite_ore",
-    "infiniumevo:crystalite_block"
-
-
+    "infiniumevo:crystalite_block",
+    "infiniumevo:steel_ore",
+    "infiniumevo:steel_block",
+    "infiniumevo:titanium_ore",
+    "infiniumevo:titanium_block",
+    "infiniumevo:enderite_ore",
+    "infiniumevo:enderite_block",
+    "infiniumevo:dreadsteel_block",
+    "infiniumevo:redrock",
+    "infiniumevo:redrock_bricks",
+    "infiniumevo:mossy_redrock_bricks",
+    "infiniumevo:cracked_redrock_bricks",
+    "infiniumevo:blue_sandstone",
+    "infiniumevo:smooth_blue_sandstone"
   ]
 }

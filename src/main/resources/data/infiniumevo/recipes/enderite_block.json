@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "infiniumevo:enderite_dust"
+    }
+  },
+  "result": {
+    "item": "infiniumevo:enderite_block",
+    "count": 1
+  }
+}

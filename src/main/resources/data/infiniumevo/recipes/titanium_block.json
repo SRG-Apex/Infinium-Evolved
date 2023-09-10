@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "infiniumevo:titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "infiniumevo:titanium_block",
+    "count": 1
+  }
+}

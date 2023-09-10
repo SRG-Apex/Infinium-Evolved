@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "infiniumevo:dreadsteel_ingot"
+    }
+  },
+  "result": {
+    "item": "infiniumevo:dreadsteel_block",
+    "count": 1
+  }
+}

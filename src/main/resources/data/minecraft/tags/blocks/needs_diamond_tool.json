@@ -2,8 +2,11 @@
   "replace": false,
   "values": [
     "infiniumevo:crystalite_ore",
-    "infiniumevo:crystalite_block"
-
-
+    "infiniumevo:crystalite_block",
+    "infiniumevo:enderite_ore",
+    "infiniumevo:enderite_block",
+    "infiniumevo:dreadsteel_block",
+    "infiniumevo:titanium_ore",
+    "infiniumevo:titanium_block"
   ]
 }

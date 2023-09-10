@@ -34,7 +34,7 @@ public class ModItems {
             ));
     public static final RegistryObject<Item> STEELFRAME = ITEMS.register("steel_machine_frame",
             () -> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.IE_ITEMS)
+                    .tab(ModCreativeModeTab.IE_OTHER)
             ));
     public static final RegistryObject<Item> RAWSTEEL = ITEMS.register("raw_steel",
             ()-> new Item (new Item.Properties()
@@ -86,7 +86,7 @@ public class ModItems {
             ));
     public static final RegistryObject<Item> TITANIUMFRAME = ITEMS.register("titanium_machine_frame",
             () -> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.IE_ITEMS)
+                    .tab(ModCreativeModeTab.IE_OTHER)
             ));
     public static final RegistryObject<Item> RAWTITANIUM = ITEMS.register("raw_titanium",
             ()-> new Item (new Item.Properties()
