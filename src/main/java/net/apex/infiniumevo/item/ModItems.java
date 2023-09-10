@@ -16,7 +16,9 @@ public class ModItems {
 
     // Template Item------------------------------------------
     public static final RegistryObject<Item> TESTITEM = ITEMS.register("testitem",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DEV_TAB)));
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.DEV_TAB)
+            ));
 
     // -------------------------------------------------------
     // Define your Items Here
@@ -26,10 +28,26 @@ public class ModItems {
     //Resources
 
 
-    //Steel Ingot
-    //Steel Machine Frame
+    public static final RegistryObject<Item> STEELINGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> STEELFRAME = ITEMS.register("steel_machine_frame",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> RAWSTEEL = ITEMS.register("raw_steel",
+            ()-> new Item (new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
 
-    //Enderite Dust
+            ));
+
+
+    public static final RegistryObject<Item> ENDERITE = ITEMS.register("enderite_dust",
+            ()-> new Item (new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+
+            ));
     // Enderite Sword
     // Enderite Pickaxe
     // Enderite Axe
@@ -43,11 +61,11 @@ public class ModItems {
 
             ));
 
-//    public static final RegistryObject<Item> GRIMDIST = ITEMS.register("grim_dust",
-//            () -> new Item(new Item.Properties()
-//                    .tab(ModCreativeModeTab.IE_ITEMS)
-//
-//            ));
+    public static final RegistryObject<Item> GRIMDUST = ITEMS.register("grim_dust",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+
+            ));
 
     // Dreadsteel Pickaxe
 
@@ -62,8 +80,19 @@ public class ModItems {
     // Dreadsteel Armor
 
 
-    // Titanium Ingot
-    // Titanium Machine Frame
+    public static final RegistryObject<Item> TITANIUMINGOT = ITEMS.register("titanium_ingot",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> TITANIUMFRAME = ITEMS.register("titanium_machine_frame",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> RAWTITANIUM = ITEMS.register("raw_titanium",
+            ()-> new Item (new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+
+            ));
 
     // Crystalite
     public static final RegistryObject<Item> CRYSTALITE = ITEMS.register("crystalite",
@@ -86,7 +115,6 @@ public class ModItems {
 
     //Crystalite Armor
 
-    // Infinium Ingot
     public static final RegistryObject<Item> INFINIUM = ITEMS.register("infinium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));
     public static final RegistryObject<Item> RAWINFINIUM = ITEMS.register("raw_infinium",

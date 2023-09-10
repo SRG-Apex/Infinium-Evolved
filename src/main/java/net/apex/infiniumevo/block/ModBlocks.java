@@ -52,6 +52,85 @@ public class ModBlocks {
 
             ),
             ModCreativeModeTab.IE_BLOCKS);
+
+
+    public static final RegistryObject<Block> ENDERITE_ORE = registerBlock("enderite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> ENDERITE_BLOCK = registerBlock("enderite_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> STEEL_ORE = registerBlock("steel_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> TITANIUM_ORE = registerBlock("titanium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> DREADSTEEL_BLOCK = registerBlock("dreadsteel_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+//                    .requiresCorrectToolForDrops()
+//                    //Add other Properties Here
+//            ),
+//            ModCreativeModeTab.IE_BLOCKS);
+//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+//                    .requiresCorrectToolForDrops()
+//                    //Add other Properties Here
+//            ),
+//            ModCreativeModeTab.IE_BLOCKS);
+//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+//                    .requiresCorrectToolForDrops()
+//                    //Add other Properties Here
+//            ),
+//            ModCreativeModeTab.IE_BLOCKS);
+//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+//                    .requiresCorrectToolForDrops()
+//                    //Add other Properties Here
+//            ),
+//            ModCreativeModeTab.IE_BLOCKS);
+//
+//    public static final RegistryObject<Block> BLOCKNAME = registerBlock("block_name", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+//                    .requiresCorrectToolForDrops()
+//                    //Add other Properties Here
+//            ),
+//            ModCreativeModeTab.IE_BLOCKS);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
     //handlers
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
        RegistryObject<T> toReturn = BLOCKS.register(name, block);
