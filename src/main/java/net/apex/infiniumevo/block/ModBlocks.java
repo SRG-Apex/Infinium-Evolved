@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -118,7 +119,7 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.IE_BLOCKS);
 
-    public static final RegistryObject<Block> BLUE_SAND = registerBlock("blue_sand", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+    public static final RegistryObject<Block> BLUE_SAND = registerBlock("blue_sand", () -> new FallingBlock(BlockBehaviour.Properties.of(Material.SAND)
                     .requiresCorrectToolForDrops()
                     //Add other Properties Here
             ),
