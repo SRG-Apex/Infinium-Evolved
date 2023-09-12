@@ -1,6 +1,5 @@
 {
-  "item.infiniumevo.testitem": "Test Item",
-  "block.infiniumevo.test_block": "Test Block",
+
   "item.infiniumevo.infinium": "Infinium Ingot",
   "item.infiniumevo.raw_infinium": "Raw Infinium",
   "item.infiniumevo.infinium_sword": "Infinium Sword",
@@ -39,6 +38,10 @@
   "block.infiniumevo.blue_sand": "Blue Sand",
   "block.infiniumevo.blue_sandstone": "Blue Sandstone",
   "block.infiniumevo.smooth_blue_sandstone": "Smooth Blue Sandstone",
+  "item.infiniumevo.infinium_helmet": "Infinium Helmet",
+  "item.infiniumevo.infinium_chestplate": "Infinium Chestplate",
+  "item.infiniumevo.infinium_leggings": "Infinium Leggings",
+  "item.infiniumevo.infinium_boots": "Infinium Boots",
   "itemGroup.devtab": "Developer Tab",
   "itemGroup.items": "IE Items",
   "itemGroup.blocks": "IE Blocks",

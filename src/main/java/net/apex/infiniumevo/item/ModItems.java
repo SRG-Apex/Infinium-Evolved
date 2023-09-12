@@ -1,6 +1,7 @@
 package net.apex.infiniumevo.item;
 
 import net.apex.infiniumevo.InfiniumEvo;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -41,8 +42,6 @@ public class ModItems {
                     .tab(ModCreativeModeTab.IE_ITEMS)
 
             ));
-
-
     public static final RegistryObject<Item> ENDERITE = ITEMS.register("enderite_dust",
             ()-> new Item (new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
@@ -52,7 +51,7 @@ public class ModItems {
     // Enderite Pickaxe
     // Enderite Axe
     // Enderite Spade
-    // Enderite How
+    // Enderite Hoe
     // Enderite Armor
 
     public static final RegistryObject<Item> DREADSTEEL = ITEMS.register("dreadsteel_ingot",
@@ -146,9 +145,22 @@ public class ModItems {
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
-// Infinium Armor
-
-
+    public static final RegistryObject<Item> INFINIUMHELM = ITEMS.register("infinium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.INFINIUM, EquipmentSlot.HEAD, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> INFINIUMCHEST = ITEMS.register("infinium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.INFINIUM, EquipmentSlot.CHEST, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> INFINIUMLEGS = ITEMS.register("infinium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.INFINIUM, EquipmentSlot.LEGS, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> INFINIUMBOOTS = ITEMS.register("infinium_boots",
+            () -> new ArmorItem(ModArmorMaterials.INFINIUM, EquipmentSlot.FEET, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
     public static final RegistryObject<Item> EGG_CORE = ITEMS.register("egg_core",
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
@@ -157,7 +169,6 @@ public class ModItems {
     public static final RegistryObject<Item> ADVANCED_TOOL_HANDLE = ITEMS.register("advanced_tool_handle",
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
-                    .stacksTo(1)
             ));
 
 
