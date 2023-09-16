@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " a ",
+        " a ",
+        " c "
+    ],
+    "key": {
+        "a": {
+            "item": "infiniumevo:crystalite"
+        },
+        "c":{
+            "item":"infiniumevo:advanced_tool_handle"
+    }
+    },
+    "result": {
+        "item": "infiniumevo:crystalite_sword",
+        "count": 1
+    }
+}

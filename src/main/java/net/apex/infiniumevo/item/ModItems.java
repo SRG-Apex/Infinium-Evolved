@@ -15,18 +15,12 @@ public class ModItems {
 
 
 
-    // Template Item------------------------------------------
+     //Template Item------------------------------------------
+
     public static final RegistryObject<Item> TESTITEM = ITEMS.register("testitem",
             () -> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.DEV_TAB)
             ));
 
-    // -------------------------------------------------------
-    // Define your Items Here
-
-
-
-    //Resources
 
 
     public static final RegistryObject<Item> STEELINGOT = ITEMS.register("steel_ingot",
@@ -45,14 +39,48 @@ public class ModItems {
     public static final RegistryObject<Item> ENDERITE = ITEMS.register("enderite_dust",
             ()-> new Item (new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
-
             ));
-    // Enderite Sword
-    // Enderite Pickaxe
-    // Enderite Axe
-    // Enderite Spade
-    // Enderite Hoe
-    // Enderite Armor
+
+// enderite Tools
+    public static final RegistryObject<Item> ENDERITESWORD = ITEMS.register("enderite_sword",
+            () -> new SwordItem(Tiers.NETHERITE,13,0f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> ENDERITEPICK = ITEMS.register("enderite_pickaxe",
+            () -> new PickaxeItem(Tiers.NETHERITE,8,-1.5f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+
+    public static final RegistryObject<Item> ENDERITEAXE = ITEMS.register("enderite_axe",
+            () -> new AxeItem(Tiers.NETHERITE,19,-2f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> ENDERITESPADE = ITEMS.register("enderite_spade",
+            () -> new ShovelItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+
+    public static final RegistryObject<Item> ENDERITEHOE = ITEMS.register("enderite_hoe",
+            () -> new HoeItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+
+    public static final RegistryObject<Item> ENDERITEHELM = ITEMS.register("enderite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ENDERITE, EquipmentSlot.HEAD, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> ENDERITECHEST = ITEMS.register("enderite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ENDERITE, EquipmentSlot.CHEST, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> ENDERITELEGS = ITEMS.register("enderite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ENDERITE, EquipmentSlot.LEGS, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> ENDERITEBOOTS = ITEMS.register("enderite_boots",
+            () -> new ArmorItem(ModArmorMaterials.ENDERITE, EquipmentSlot.FEET, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
     public static final RegistryObject<Item> DREADSTEEL = ITEMS.register("dreadsteel_ingot",
             ()-> new Item(new Item.Properties()
@@ -63,20 +91,44 @@ public class ModItems {
     public static final RegistryObject<Item> GRIMDUST = ITEMS.register("grim_dust",
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
-
             ));
 
-    // Dreadsteel Pickaxe
 
-    // Reaper Scythe
+    public static final RegistryObject<Item> DREADSTEELPICK = ITEMS.register("dreadsteel_pickaxe",
+            () -> new PickaxeItem(Tiers.NETHERITE,8,-1.5f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
-    // Dreadsteel Axe
+    public static final RegistryObject<Item> DREADSTEELAXE = ITEMS.register("dreadsteel_axe",
+            () -> new AxeItem(Tiers.NETHERITE,19,-2f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> DREADSTEELSPADE = ITEMS.register("dreadsteel_spade",
+            () -> new ShovelItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
-    // Dreadsteel Spade
+    public static final RegistryObject<Item> DREADSTEELHOE = ITEMS.register("dreadsteel_hoe",
+            () -> new HoeItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
-    // Dread Steel Hoe
-
-    // Dreadsteel Armor
+    public static final RegistryObject<Item> DREADSTEELHELM = ITEMS.register("dreadsteel_helmet",
+            () -> new ArmorItem(ModArmorMaterials.DREADSTEEL, EquipmentSlot.HEAD, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> DREADSTEELCHEST = ITEMS.register("dreadsteel_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.DREADSTEEL, EquipmentSlot.CHEST, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> DREADSTEELLEGS = ITEMS.register("dreadsteel_leggings",
+            () -> new ArmorItem(ModArmorMaterials.DREADSTEEL, EquipmentSlot.LEGS, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> DREADSTEELBOOTS = ITEMS.register("dreadsteel_boots",
+            () -> new ArmorItem(ModArmorMaterials.DREADSTEEL, EquipmentSlot.FEET, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
 
     public static final RegistryObject<Item> TITANIUMINGOT = ITEMS.register("titanium_ingot",
@@ -104,15 +156,42 @@ public class ModItems {
 
             ));
 
-    //Crystalite Sword
+    // crystalite Tools
+    public static final RegistryObject<Item> CRYSTALITESWORD = ITEMS.register("crystalite_sword",
+            () -> new SwordItem(ModToolTiers.T5,13,0f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
-    //Crystalite Axe
+    public static final RegistryObject<Item> CRYSTALITEAXE = ITEMS.register("crystalite_axe",
+            () -> new AxeItem(ModToolTiers.T5,19,-2f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> CRYSTALITESPADE = ITEMS.register("crystalite_spade",
+            () -> new ShovelItem(ModToolTiers.T5,5,-1f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
-    //Crystalite Spade
+    public static final RegistryObject<Item> CRYSTALITEHOE = ITEMS.register("crystalite_hoe",
+            () -> new HoeItem(ModToolTiers.T5,5,-1f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
-    // Crystalite Hoe
-
-    //Crystalite Armor
+    public static final RegistryObject<Item> CRYSTALITEHELM = ITEMS.register("crystalite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTALITE, EquipmentSlot.HEAD, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> CRYSTALITECHEST = ITEMS.register("crystalite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTALITE, EquipmentSlot.CHEST, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> CRYSTALITELEGS = ITEMS.register("crystalite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTALITE, EquipmentSlot.LEGS, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> CRYSTALITEBOOTS = ITEMS.register("crystalite_boots",
+            () -> new ArmorItem(ModArmorMaterials.CRYSTALITE, EquipmentSlot.FEET, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
     public static final RegistryObject<Item> INFINIUM = ITEMS.register("infinium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.IE_ITEMS)));

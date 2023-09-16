@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        "a a",
+        "   "
+    ],
+    "key": {
+        "a": {
+            "item": "infiniumevo:crystalite"
+        }
+    },
+    "result": {
+        "item": "infiniumevo:crystalite_helmet",
+        "count": 1
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "a a",
+        "b b"
+    ],
+    "key": {
+        "a": {
+            "item": "infiniumevo:enderite_dust"
+        },
+   	"b": {
+            "item": "infiniumevo:enderite_block"
+        }
+    },
+    "result": {
+        "item": "infiniumevo:enderite_boots",
+        "count": 1
+    }
+}

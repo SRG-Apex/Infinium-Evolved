@@ -15,13 +15,23 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial{
 
-    //Use Infinium As a template to implement more armor types below
-    // the other functions are global for all armor classes
+// Change Values
+    DREADSTEEL("dreadsteel",28,new int[]{2,5,8,3}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            2.0F, 0.0F, () -> Ingredient.of(ModItems.DREADSTEEL.get())
+            ),
+    ENDERITE("enderite",28,new int[]{2,5,8,3}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            2.0F, 0.0F, () -> Ingredient.of(ModItems.ENDERITE.get())
+            ),
+    CRYSTALITE("crystalite",28,new int[]{2,5,8,3}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            2.0F, 0.0F, () -> Ingredient.of(ModItems.CRYSTALITE.get())
+            ),
 
     INFINIUM("infinium",28,new int[]{2,5,8,3}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
-            2.0F, 0.0F, () -> Ingredient.of(ModItems.INFINIUM.get()));
+            2.0F, 0.0F, () -> Ingredient.of(ModItems.INFINIUM.get())
+            );
 
-        private static final int[] HEALTH_PER_SLOT = new int[]{13,15,16,11};
+
+    private static final int[] HEALTH_PER_SLOT = new int[]{13,15,16,11};
         private final String name;
         private final int durabilityMultiplier;
         private final int[] slotProtections;

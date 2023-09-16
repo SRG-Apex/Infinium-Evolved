@@ -20,11 +20,8 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, InfiniumEvo.MOD_ID);
-    // template block---------------------
-    public static final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-            .instabreak()
-            ),
-            ModCreativeModeTab.DEV_TAB);
+
+
 
     //add actual blocks here
     public static final RegistryObject<Block> CRYSTALITE_BLOCK = registerBlock("crystalite_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
@@ -61,6 +58,7 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.IE_BLOCKS);
     public static final RegistryObject<Block> ENDERITE_BLOCK = registerBlock("enderite_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f)
                     .requiresCorrectToolForDrops()
                     //Add other Properties Here
             ),
@@ -73,6 +71,7 @@ public class ModBlocks {
             ModCreativeModeTab.IE_BLOCKS);
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f)
                     .requiresCorrectToolForDrops()
                     //Add other Properties Here
             ),
@@ -120,7 +119,7 @@ public class ModBlocks {
             ModCreativeModeTab.IE_BLOCKS);
 
     public static final RegistryObject<Block> BLUE_SAND = registerBlock("blue_sand", () -> new FallingBlock(BlockBehaviour.Properties.of(Material.SAND)
-                    .requiresCorrectToolForDrops()
+                    .strength(2f)
                     //Add other Properties Here
             ),
             ModCreativeModeTab.IE_BLOCKS);
@@ -144,8 +143,10 @@ public class ModBlocks {
        return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
-                                                                            CreativeModeTab tab){
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name,
+                                                                            RegistryObject<T> block,
+                                                                            CreativeModeTab tab
+    ){
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
     public static void register(IEventBus eventBus){

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "a a",
+        "aaa",
+        "aaa"
+    ],
+    "key": {
+        "a": {
+            "item": "infiniumevo:dreadsteel_ingot"
+        }
+    },
+    "result": {
+        "item": "infiniumevo:dreadsteel_chestplate",
+        "count": 1
+    }
+}
