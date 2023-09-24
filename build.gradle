@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '0.0.7'
+version = '0.0.8'
 group = 'net.apex.infiniumevo' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'infiniumevo'
 

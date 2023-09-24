@@ -16,18 +16,18 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial{
 
 // Change Values
-    DREADSTEEL("dreadsteel",28,new int[]{2,5,8,3}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
-            2.0F, 0.0F, () -> Ingredient.of(ModItems.DREADSTEEL.get())
+    DREADSTEEL("dreadsteel",28,new int[]{4,10,12,6}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            3.0F, 0.0F, () -> Ingredient.of(ModItems.DREADSTEEL.get())
             ),
-    ENDERITE("enderite",28,new int[]{2,5,8,3}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+    ENDERITE("enderite",28,new int[]{4,8,10,5}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
             2.0F, 0.0F, () -> Ingredient.of(ModItems.ENDERITE.get())
             ),
-    CRYSTALITE("crystalite",28,new int[]{2,5,8,3}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
-            2.0F, 0.0F, () -> Ingredient.of(ModItems.CRYSTALITE.get())
+    CRYSTALITE("crystalite",28,new int[]{8,14,16,7}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            4.0F, 0.5F, () -> Ingredient.of(ModItems.CRYSTALITE.get())
             ),
 
-    INFINIUM("infinium",28,new int[]{2,5,8,3}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
-            2.0F, 0.0F, () -> Ingredient.of(ModItems.INFINIUM.get())
+    INFINIUM("infinium",28,new int[]{14,16,18,12}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            5.0F, 0.5F, () -> Ingredient.of(ModItems.INFINIUM.get())
             );
 
 

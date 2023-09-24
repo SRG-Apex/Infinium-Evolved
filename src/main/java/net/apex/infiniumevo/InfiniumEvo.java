@@ -13,6 +13,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import net.apex.infiniumevo.world.feature.ModConfiguredFeatures;
+import net.apex.infiniumevo.world.feature.ModPlacedFeatures;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(InfiniumEvo.MOD_ID)
@@ -27,13 +29,16 @@ public class InfiniumEvo
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
 
-        // Register the commonSetup method for modloading
-        modEventBus.addListener(this::commonSetup);
 
-//        // Register the Deferred Register to the mod event bus so items and blocks get registered
+
+      // Register the Deferred Register to the mod event bus so items and blocks get registered
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-//
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
+        // Register the commonSetup method for modloading
+        modEventBus.addListener(this::commonSetup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
