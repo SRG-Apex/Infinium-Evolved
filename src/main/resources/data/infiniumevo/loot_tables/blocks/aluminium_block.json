@@ -2,11 +2,11 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 2,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "infiniumevo:raw_steel"
+          "name": "infiniumevo:aluminium_block"
         }
       ]
     }

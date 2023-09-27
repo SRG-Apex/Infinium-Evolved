@@ -29,7 +29,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab IE_OTHER=new CreativeModeTab("other") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.STEELFRAME.get());
+            return new ItemStack(ModItems.ALUMINIUMFRAME.get());
         }
     };
 

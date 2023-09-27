@@ -23,15 +23,15 @@ public class ModItems {
 
 
 
-    public static final RegistryObject<Item> STEELINGOT = ITEMS.register("steel_ingot",
+    public static final RegistryObject<Item> ALUMINIUMINGOT = ITEMS.register("aluminium_ingot",
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
             ));
-    public static final RegistryObject<Item> STEELFRAME = ITEMS.register("steel_machine_frame",
+    public static final RegistryObject<Item> ALUMINIUMFRAME = ITEMS.register("aluminium_machine_frame",
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.IE_OTHER)
             ));
-    public static final RegistryObject<Item> RAWSTEEL = ITEMS.register("raw_steel",
+    public static final RegistryObject<Item> RAWALUMINIUM = ITEMS.register("raw_aluminium",
             ()-> new Item (new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
 

@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "infiniumevo:block/steel_machine_frame"
-  }
-
-}

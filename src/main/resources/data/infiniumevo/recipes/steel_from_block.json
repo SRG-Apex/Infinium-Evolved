@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "infiniumevo:steel_block"
+      "item": "infiniumevo:aluminium_block"
     }
   ],
   "result": {
-    "item": "infiniumevo:steel_ingot",
+    "item": "infiniumevo:aluminium_ingot",
     "count": 9
   }
 }

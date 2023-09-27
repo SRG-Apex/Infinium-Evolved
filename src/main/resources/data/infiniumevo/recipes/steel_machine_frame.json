@@ -7,14 +7,14 @@
   ],
   "key": {
     "1": {
-      "item": "infiniumevo:steel_block"
+      "item": "infiniumevo:aluminium_block"
     },
     "2": {
-      "item": "infiniumevo:steel_ingot"
+      "item": "infiniumevo:aluminium_ingot"
     }
   },
   "result": {
-    "item": "infiniumevo:steel_machine_frame",
+    "item": "infiniumevo:aluminium_machine_frame",
     "count": 1
   }
 }

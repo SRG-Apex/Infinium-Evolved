@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "infiniumevo:item/raw_steel"
+    "layer0": "infiniumevo:item/aluminium_ingot"
   }
 }

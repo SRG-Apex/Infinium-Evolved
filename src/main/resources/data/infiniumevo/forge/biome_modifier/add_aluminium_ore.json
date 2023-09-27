@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "infiniumevo:steel_ore_placed",
+  "features": "infiniumevo:aluminium_ore_placed",
   "step": "underground_ores"
 }

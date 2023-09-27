@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -52,7 +53,7 @@ public class ModBlocks {
             ModCreativeModeTab.IE_BLOCKS);
 
 
-    public static final RegistryObject<Block> ENDERITE_ORE = registerBlock("enderite_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+    public static final RegistryObject<DropExperienceBlock> ENDERITE_ORE = registerBlock("enderite_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .requiresCorrectToolForDrops()
                     //Add other Properties Here
             ),
@@ -64,13 +65,13 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.IE_BLOCKS);
 
-    public static final RegistryObject<Block> STEEL_ORE = registerBlock("steel_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+    public static final RegistryObject<Block> ALUMINIUM_ORE = registerBlock("aluminium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .requiresCorrectToolForDrops()
                     //Add other Properties Here
             ),
             ModCreativeModeTab.IE_BLOCKS);
 
-    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+    public static final RegistryObject<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     //Add other Properties Here

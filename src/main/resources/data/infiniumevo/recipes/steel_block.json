@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "infiniumevo:steel_ingot"
+      "item": "infiniumevo:aluminium_ingot"
     }
   },
   "result": {
-    "item": "infiniumevo:steel_block",
+    "item": "infiniumevo:aluminium_block",
     "count": 1
   }
 }
