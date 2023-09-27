@@ -18,7 +18,22 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> STEEL_ORE_PLACED = PLACED_FEATURES.register("steel_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.STEEL_ORE.getHolder().get(),
                     commonOrePlacement(12, // VeinsPerChunk
-                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(70)))));
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(5), VerticalAnchor.belowTop(70)))));
+
+    public static final RegistryObject<PlacedFeature> ENDERITE_ORE_PLACED = PLACED_FEATURES.register("enderite_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.ENDERITE_ORE.getHolder().get(),
+                    commonOrePlacement(12,
+                            HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.belowTop(50)))));
+
+    public static final RegistryObject<PlacedFeature> TITANIUM_ORE_PLACED = PLACED_FEATURES.register("titanium_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.TITANIUM_ORE.getHolder().get(),
+                    commonOrePlacement(8,
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-64), VerticalAnchor.belowTop(-10)))));
+
+    public static final RegistryObject<PlacedFeature> CRYSTALITE_ORE_PLACED = PLACED_FEATURES.register("crystalite_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.CRYSTALITE_ORE.getHolder().get(),
+                    commonOrePlacement(10,
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-64), VerticalAnchor.belowTop(-40)))));
 
 
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
