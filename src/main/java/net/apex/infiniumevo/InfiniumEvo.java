@@ -17,6 +17,8 @@ import net.apex.infiniumevo.world.feature.ModConfiguredFeatures;
 import net.apex.infiniumevo.world.feature.ModPlacedFeatures;
 
 // The value here should match an entry in the META-INF/mods.toml file
+
+
 @Mod(InfiniumEvo.MOD_ID)
 public class InfiniumEvo
 {
