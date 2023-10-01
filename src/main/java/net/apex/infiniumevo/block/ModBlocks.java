@@ -136,6 +136,38 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.IE_BLOCKS);
 
+    public static final RegistryObject<Block> WILLOW_LOG = registerBlock("willow_log", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> WILLOW_PLANKS = registerBlock("willow_planks", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> WILLOW_LEAVES = registerBlock("willow_leaves", () -> new Block(BlockBehaviour.Properties.of(Material.LEAVES)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+
+    public static final RegistryObject<Block> DENSE_JUNGLE_LOG = registerBlock("dense_jungle_log", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> DENSE_JUNGLE_PLANKS = registerBlock("dense_jungle_planks", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> DENSE_JUNGLE_LEAVES = registerBlock("dense_jungle_leaves", () -> new Block(BlockBehaviour.Properties.of(Material.LEAVES)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+
+    public static final RegistryObject<Block> ENCHANTED_LOG = registerBlock("enchanted_log", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> ENCHANTED_PLANKS = registerBlock("enchanted_planks", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> ENCHANTED_LEAVES = registerBlock("enchanted_leaves", () -> new Block(BlockBehaviour.Properties.of(Material.LEAVES)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
 
     //handlers
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

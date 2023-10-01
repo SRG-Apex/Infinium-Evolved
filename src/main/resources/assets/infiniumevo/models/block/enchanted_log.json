@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "infiniumevo:block/enchanted_log_top",
+    "down": "infiniumevo:block/enchanted_log_top",
+    "north": "infiniumevo:block/enchanted_log",
+    "east": "infiniumevo:block/enchanted_log",
+    "south": "infiniumevo:block/enchanted_log",
+    "west": "infiniumevo:block/enchanted_log"
+  }
+
+}

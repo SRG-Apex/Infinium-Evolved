@@ -40,21 +40,6 @@ public class ModConfiguredFeatures {
     public static final RegistryObject<ConfiguredFeature<?, ?>> CRYSTALITE_ORE = CONFIGURED_FEATURES.register("crystalite_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_CRYSTALITE_ORES.get(),7)));
 
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_ENDERITE_ORES = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.ENDERITE_ORE.get().defaultBlockState())));
-    public static final RegistryObject<ConfiguredFeature<?, ?>> ENDERITE_ORE = CONFIGURED_FEATURES.register("enderite_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ENDERITE_ORES.get(),7)));
-
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_TITANIUM_ORES = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE.get().defaultBlockState())));
-    public static final RegistryObject<ConfiguredFeature<?, ?>> TITANIUM_ORE = CONFIGURED_FEATURES.register("titanium_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_TITANIUM_ORES.get(),7)));
-
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_CRYSTALITE_ORES = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.CRYSTALITE_ORE.get().defaultBlockState())));
-    public static final RegistryObject<ConfiguredFeature<?, ?>> CRYSTALITE_ORE = CONFIGURED_FEATURES.register("crystalite_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_CRYSTALITE_ORES.get(),7)));
-
 
     public static void register(IEventBus eventBus) {
         CONFIGURED_FEATURES.register(eventBus);

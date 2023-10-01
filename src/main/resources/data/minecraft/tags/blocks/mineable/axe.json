@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-
+    "infiniumevo:willow_log",
+    "infiniumevo:willow_planks",
+    "infiniumevo:dense_jungle_log",
+    "infiniumevo:dense_jungle_planks",
+    "infiniumevo:enchanted_log",
+    "infiniumevo:enchanted_planks"
   ]
 }
