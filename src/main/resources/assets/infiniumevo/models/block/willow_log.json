@@ -6,7 +6,8 @@
     "north": "infiniumevo:block/willow_log",
     "east": "infiniumevo:block/willow_log",
     "south": "infiniumevo:block/willow_log",
-    "west": "infiniumevo:block/willow_log"
+    "west": "infiniumevo:block/willow_log",
+    "particle": "infiniumevo:block/willow_log"
   }
 
 }

@@ -6,7 +6,9 @@
     "north": "infiniumevo:block/blue_sandstone",
     "east": "infiniumevo:block/blue_sandstone",
     "south": "infiniumevo:block/blue_sandstone",
-    "west": "infiniumevo:block/blue_sandstone"
+    "west": "infiniumevo:block/blue_sandstone",
+    "particle": "infiniumevo:block/blue_sandstone_bottom"
+
   }
 
 }

@@ -4,11 +4,19 @@ import com.google.common.base.Suppliers;
 import net.apex.infiniumevo.InfiniumEvo;
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.features.OreFeatures;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.apex.infiniumevo.block.ModBlocks;
+import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -39,6 +47,20 @@ public class ModConfiguredFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.CRYSTALITE_ORE.get().defaultBlockState())));
     public static final RegistryObject<ConfiguredFeature<?, ?>> CRYSTALITE_ORE = CONFIGURED_FEATURES.register("crystalite_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_CRYSTALITE_ORES.get(),7)));
+
+    public static final RegistryObject<ConfiguredFeature<?,?>> WILLOW =
+            CONFIGURED_FEATURES.register("willow", () ->
+                    new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                            BlockStateProvider.simple(ModBlocks.WILLOW_LOG.get()),
+                            new StraightTrunkPlacer(5, 6, 3),
+                            BlockStateProvider.simple(ModBlocks.WILLOW_LEAVES.get()),
+                            new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
+                            new TwoLayersFeatureSize(1, 0, 2)).build()));
+    public static final RegistryObject<ConfiguredFeature<?, ?>> WILLOW_SPAWN =
+            CONFIGURED_FEATURES.register("willow_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
+                            ModPlacedFeatures.WILLOW_CHECKED.getHolder().get(),
+                            0.5F)), ModPlacedFeatures.WILLOW_CHECKED.getHolder().get())));
 
 
     public static void register(IEventBus eventBus) {

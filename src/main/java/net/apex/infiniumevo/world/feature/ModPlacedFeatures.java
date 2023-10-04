@@ -1,7 +1,10 @@
 package net.apex.infiniumevo.world.feature;
 
 import net.apex.infiniumevo.InfiniumEvo;
+import net.apex.infiniumevo.block.ModBlocks;
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -35,7 +38,13 @@ public class ModPlacedFeatures {
                     commonOrePlacement(10,
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-64), VerticalAnchor.belowTop(-40)))));
 
+    public static final RegistryObject<PlacedFeature> WILLOW_CHECKED = PLACED_FEATURES.register("willow_checked",
+            () -> new PlacedFeature(ModConfiguredFeatures.WILLOW.getHolder().get(),
+                    List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.WILLOW_SAPLING.get()))));
 
+    public static final RegistryObject<PlacedFeature> WILLOW_PLACED = PLACED_FEATURES.register("willow_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.WILLOW_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
+                    PlacementUtils.countExtra(3, 0.1f, 2))));
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
     }

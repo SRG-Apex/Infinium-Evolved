@@ -6,7 +6,8 @@
     "north": "infiniumevo:block/enchanted_log",
     "east": "infiniumevo:block/enchanted_log",
     "south": "infiniumevo:block/enchanted_log",
-    "west": "infiniumevo:block/enchanted_log"
+    "west": "infiniumevo:block/enchanted_log",
+    "particle": "infiniumevo:block/enchanted_log"
   }
 
 }

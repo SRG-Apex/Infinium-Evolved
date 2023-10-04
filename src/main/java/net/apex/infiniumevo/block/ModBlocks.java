@@ -1,15 +1,19 @@
 package net.apex.infiniumevo.block;
 
+import net.apex.infiniumevo.block.custom.ModFlammablePillar;
 import net.apex.infiniumevo.item.ModCreativeModeTab;
 import net.apex.infiniumevo.item.ModItems;
 import net.apex.infiniumevo.InfiniumEvo;
+import net.apex.infiniumevo.world.feature.tree.WillowTreeGrower;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.FallingBlock;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -136,14 +140,62 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.IE_BLOCKS);
 
-    public static final RegistryObject<Block> WILLOW_LOG = registerBlock("willow_log", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+    public static final RegistryObject<Block> WILLOW_LOG = registerBlock("willow_log", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+                    .requiresCorrectToolForDrops()
             ),
             ModCreativeModeTab.IE_BLOCKS);
-    public static final RegistryObject<Block> WILLOW_PLANKS = registerBlock("willow_planks", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+    public static final RegistryObject<Block> STRIPPED_WILLOW_LOG = registerBlock("stripped_willow_log", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+                    .requiresCorrectToolForDrops()
             ),
             ModCreativeModeTab.IE_BLOCKS);
-    public static final RegistryObject<Block> WILLOW_LEAVES = registerBlock("willow_leaves", () -> new Block(BlockBehaviour.Properties.of(Material.LEAVES)
+    public static final RegistryObject<Block> WILLOW_WOOD = registerBlock("willow_wood", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+                    .requiresCorrectToolForDrops()
             ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> STRIPPED_WILLOW_WOOD = registerBlock("stripped_willow_wood", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
+                    .requiresCorrectToolForDrops()
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> WILLOW_LEAVES = registerBlock("willow_leaves", ()-> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
+                    .requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> WILLOW_SAPLING = registerBlock("willow_sapling", ()-> new SaplingBlock(new WillowTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> WILLOW_PLANKS = registerBlock("willow_planks", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
             ModCreativeModeTab.IE_BLOCKS);
 
 
