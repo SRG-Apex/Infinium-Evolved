@@ -1,0 +1,16 @@
+{
+    "variants": {
+      "axis=x": {
+        "model": "infiniumevo:block/enchanted_wood_horizontal",
+        "x": 90,
+        "y": 90
+      },
+      "axis=y": {
+        "model": "infiniumevo:block/enchanted_wood"
+      },
+      "axis=z": {
+        "model": "infiniumevo:block/enchanted_wood_horizontal",
+        "x": 90
+      }
+    }
+  }

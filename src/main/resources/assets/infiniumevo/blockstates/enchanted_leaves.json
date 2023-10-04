@@ -1,5 +1,7 @@
 {
-  "variants": {
-    "": {"model": "infiniumevo:block/enchanted_leaves"}
+    "variants": {
+      "": {
+        "model": "infiniumevo:block/enchanted_leaves"
+      }
+    }
   }
-}

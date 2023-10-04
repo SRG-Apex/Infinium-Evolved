@@ -1,5 +1,7 @@
 {
-  "variants": {
-    "": {"model": "infiniumevo:block/dense_jungle_leaves"}
+    "variants": {
+      "": {
+        "model": "infiniumevo:block/dense_jungle_leaves"
+      }
+    }
   }
-}

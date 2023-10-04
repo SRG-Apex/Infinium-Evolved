@@ -59,8 +59,36 @@ public class ModConfiguredFeatures {
     public static final RegistryObject<ConfiguredFeature<?, ?>> WILLOW_SPAWN =
             CONFIGURED_FEATURES.register("willow_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
-                            ModPlacedFeatures.WILLOW_CHECKED.getHolder().get(),
-                            0.5F)), ModPlacedFeatures.WILLOW_CHECKED.getHolder().get())));
+                            ModPlacedFeatures.ENCHANTED_CHECKED.getHolder().get(),
+                            0.5F)), ModPlacedFeatures.ENCHANTED_CHECKED.getHolder().get())));
+
+    public static final RegistryObject<ConfiguredFeature<?,?>> ENCHANTED =
+            CONFIGURED_FEATURES.register("enchanted", () ->
+                    new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                            BlockStateProvider.simple(ModBlocks.ENCHANTED_LOG.get()),
+                            new StraightTrunkPlacer(5, 6, 3),
+                            BlockStateProvider.simple(ModBlocks.ENCHANTED_LEAVES.get()),
+                            new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
+                            new TwoLayersFeatureSize(1, 0, 2)).build()));
+    public static final RegistryObject<ConfiguredFeature<?, ?>> ENCHANTED_SPAWN =
+            CONFIGURED_FEATURES.register("enchanted_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
+                            ModPlacedFeatures.ENCHANTED_CHECKED.getHolder().get(),
+                            0.5F)), ModPlacedFeatures.ENCHANTED_CHECKED.getHolder().get())));
+
+    public static final RegistryObject<ConfiguredFeature<?,?>> DENSE_JUNGLE =
+            CONFIGURED_FEATURES.register("dense_jungle", () ->
+                    new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                            BlockStateProvider.simple(ModBlocks.DENSE_JUNGLE_LOG.get()),
+                            new StraightTrunkPlacer(5, 6, 3),
+                            BlockStateProvider.simple(ModBlocks.DENSE_JUNGLE_LEAVES.get()),
+                            new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
+                            new TwoLayersFeatureSize(1, 0, 2)).build()));
+    public static final RegistryObject<ConfiguredFeature<?, ?>> DENSE_JUNGLE_SPAWN =
+            CONFIGURED_FEATURES.register("dense_jungle_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
+                            ModPlacedFeatures.DENSE_JUNGLE_CHECKED.getHolder().get(),
+                            0.5F)), ModPlacedFeatures.DENSE_JUNGLE_CHECKED.getHolder().get())));
 
 
     public static void register(IEventBus eventBus) {

@@ -1,5 +1,7 @@
 {
-  "variants": {
-    "": {"model": "infiniumevo:block/willow_leaves"}
+    "variants": {
+      "": {
+        "model": "infiniumevo:block/willow_leaves"
+      }
+    }
   }
-}

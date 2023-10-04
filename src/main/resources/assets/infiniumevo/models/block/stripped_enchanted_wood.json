@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "infiniumevo:block/stripped_enchanted_wood",
+      "side": "infiniumevo:block/stripped_enchanted_wood"
+    }
+  }

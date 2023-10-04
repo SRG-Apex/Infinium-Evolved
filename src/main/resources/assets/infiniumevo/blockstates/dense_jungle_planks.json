@@ -1,5 +1,7 @@
 {
-  "variants": {
-    "": {"model": "infiniumevo:block/dense_jungle_planks"}
+    "variants": {
+      "": {
+        "model": "infiniumevo:block/dense_jungle_planks"
+      }
+    }
   }
-}

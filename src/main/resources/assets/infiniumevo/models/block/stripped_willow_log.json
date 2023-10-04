@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "infiniumevo:block/stripped_willow_log_top",
+      "side": "infiniumevo:block/stripped_willow_log"
+    }
+  }

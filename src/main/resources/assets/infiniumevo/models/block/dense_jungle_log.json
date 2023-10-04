@@ -1,14 +1,7 @@
 {
-  "parent": "block/cube",
-  "textures": {
-    "up": "infiniumevo:block/dense_jungle_log_top",
-    "down": "infiniumevo:block/dense_jungle_log_top",
-    "north": "infiniumevo:block/dense_jungle_log",
-    "east": "infiniumevo:block/dense_jungle_log",
-    "south": "infiniumevo:block/dense_jungle_log",
-    "west": "infiniumevo:block/dense_jungle_log",
-    "particle": "infiniumevo:block/dense_jungle_log"
-
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "infiniumevo:block/dense_jungle_log_top",
+      "side": "infiniumevo:block/dense_jungle_log"
+    }
   }
-
-}

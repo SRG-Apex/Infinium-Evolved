@@ -1,13 +1,7 @@
 {
-  "parent": "block/cube",
-  "textures": {
-    "up": "infiniumevo:block/willow_log_top",
-    "down": "infiniumevo:block/willow_log_top",
-    "north": "infiniumevo:block/willow_log",
-    "east": "infiniumevo:block/willow_log",
-    "south": "infiniumevo:block/willow_log",
-    "west": "infiniumevo:block/willow_log",
-    "particle": "infiniumevo:block/willow_log"
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "infiniumevo:block/willow_log_top",
+      "side": "infiniumevo:block/willow_log"
+    }
   }
-
-}

@@ -1,5 +1,7 @@
 {
-  "variants": {
-    "": {"model": "infiniumevo:block/enchanted_planks"}
+    "variants": {
+      "": {
+        "model": "infiniumevo:block/enchanted_planks"
+      }
+    }
   }
-}

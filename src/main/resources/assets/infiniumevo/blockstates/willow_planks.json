@@ -1,5 +1,7 @@
 {
-  "variants": {
-    "": {"model": "infiniumevo:block/willow_planks"}
+    "variants": {
+      "": {
+        "model": "infiniumevo:block/willow_planks"
+      }
+    }
   }
-}

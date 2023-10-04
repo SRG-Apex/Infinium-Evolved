@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+      "cross": "infiniumevo:block/dense_jungle_sapling"
+    },
+    "render_type": "cutout"
+  }

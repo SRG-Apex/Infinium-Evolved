@@ -1,5 +1,16 @@
 {
-  "variants": {
-    "": {"model": "infiniumevo:block/willow_log"}
+    "variants": {
+      "axis=x": {
+        "model": "infiniumevo:block/willow_log_horizontal",
+        "x": 90,
+        "y": 90
+      },
+      "axis=y": {
+        "model": "infiniumevo:block/willow_log"
+      },
+      "axis=z": {
+        "model": "infiniumevo:block/willow_log_horizontal",
+        "x": 90
+      }
+    }
   }
-}

@@ -1,0 +1,16 @@
+{
+    "variants": {
+      "axis=x": {
+        "model": "infiniumevo:block/stripped_enchanted_log_horizontal",
+        "x": 90,
+        "y": 90
+      },
+      "axis=y": {
+        "model": "infiniumevo:block/stripped_enchanted_log"
+      },
+      "axis=z": {
+        "model": "infiniumevo:block/stripped_enchanted_log_horizontal",
+        "x": 90
+      }
+    }
+  }

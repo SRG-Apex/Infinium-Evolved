@@ -45,6 +45,22 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> WILLOW_PLACED = PLACED_FEATURES.register("willow_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.WILLOW_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
                     PlacementUtils.countExtra(3, 0.1f, 2))));
+
+    public static final RegistryObject<PlacedFeature> ENCHANTED_CHECKED = PLACED_FEATURES.register("enchanted_checked",
+            () -> new PlacedFeature(ModConfiguredFeatures.ENCHANTED.getHolder().get(),
+                    List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.ENCHANTED_SAPLING.get()))));
+
+    public static final RegistryObject<PlacedFeature> ENCHANTED_PLACED = PLACED_FEATURES.register("enchanted_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.ENCHANTED_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
+                    PlacementUtils.countExtra(3, 0.1f, 2))));
+
+    public static final RegistryObject<PlacedFeature> DENSE_JUNGLE_CHECKED = PLACED_FEATURES.register("dense_jungle_checked",
+            () -> new PlacedFeature(ModConfiguredFeatures.DENSE_JUNGLE.getHolder().get(),
+                    List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.DENSE_JUNGLE_SAPLING.get()))));
+
+    public static final RegistryObject<PlacedFeature> DENSE_JUNGLE_PLACED = PLACED_FEATURES.register("dense_jungle_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.DENSE_JUNGLE_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
+                    PlacementUtils.countExtra(3, 0.1f, 2))));
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
     }

@@ -4,6 +4,8 @@ import net.apex.infiniumevo.block.custom.ModFlammablePillar;
 import net.apex.infiniumevo.item.ModCreativeModeTab;
 import net.apex.infiniumevo.item.ModItems;
 import net.apex.infiniumevo.InfiniumEvo;
+import net.apex.infiniumevo.world.feature.tree.DenseJungleTreeGrower;
+import net.apex.infiniumevo.world.feature.tree.EnchantedTreeGrower;
 import net.apex.infiniumevo.world.feature.tree.WillowTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -199,26 +201,121 @@ public class ModBlocks {
             ModCreativeModeTab.IE_BLOCKS);
 
 
-    public static final RegistryObject<Block> DENSE_JUNGLE_LOG = registerBlock("dense_jungle_log", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+    public static final RegistryObject<Block> DENSE_JUNGLE_LOG = registerBlock("dense_jungle_log", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+                    .requiresCorrectToolForDrops()
             ),
             ModCreativeModeTab.IE_BLOCKS);
-    public static final RegistryObject<Block> DENSE_JUNGLE_PLANKS = registerBlock("dense_jungle_planks", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+    public static final RegistryObject<Block> STRIPPED_DENSE_JUNGLE_LOG = registerBlock("stripped_dense_jungle_log", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+                    .requiresCorrectToolForDrops()
             ),
             ModCreativeModeTab.IE_BLOCKS);
-    public static final RegistryObject<Block> DENSE_JUNGLE_LEAVES = registerBlock("dense_jungle_leaves", () -> new Block(BlockBehaviour.Properties.of(Material.LEAVES)
+    public static final RegistryObject<Block> DENSE_JUNGLE_WOOD = registerBlock("dense_jungle_wood", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+                    .requiresCorrectToolForDrops()
             ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> STRIPPED_DENSE_JUNGLE_WOOD = registerBlock("stripped_dense_jungle_wood", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
+                    .requiresCorrectToolForDrops()
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> DENSE_JUNGLE_LEAVES = registerBlock("dense_jungle_leaves", ()-> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
+                    .requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> DENSE_JUNGLE_SAPLING = registerBlock("dense_jungle_sapling", ()-> new SaplingBlock(new DenseJungleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> DENSE_JUNGLE_PLANKS = registerBlock("dense_jungle_planks", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> ENCHANTED_LOG = registerBlock("enchanted_log", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+                    .requiresCorrectToolForDrops()
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> STRIPPED_ENCHANTED_LOG = registerBlock("stripped_enchanted_log", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+                    .requiresCorrectToolForDrops()
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> ENCHANTED_WOOD = registerBlock("enchanted_wood", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+                    .requiresCorrectToolForDrops()
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> STRIPPED_ENCHANTED_WOOD = registerBlock("stripped_enchanted_wood", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
+                    .requiresCorrectToolForDrops()
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> ENCHANTED_LEAVES = registerBlock("enchanted_leaves", ()-> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
+                    .requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> ENCHANTED_SAPLING = registerBlock("enchanted_sapling", ()-> new SaplingBlock(new EnchantedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> ENCHANTED_PLANKS = registerBlock("enchanted_planks", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
             ModCreativeModeTab.IE_BLOCKS);
 
-
-    public static final RegistryObject<Block> ENCHANTED_LOG = registerBlock("enchanted_log", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
-            ),
-            ModCreativeModeTab.IE_BLOCKS);
-    public static final RegistryObject<Block> ENCHANTED_PLANKS = registerBlock("enchanted_planks", ()-> new Block(BlockBehaviour.Properties.of(Material.WOOD)
-            ),
-            ModCreativeModeTab.IE_BLOCKS);
-    public static final RegistryObject<Block> ENCHANTED_LEAVES = registerBlock("enchanted_leaves", () -> new Block(BlockBehaviour.Properties.of(Material.LEAVES)
-            ),
-            ModCreativeModeTab.IE_BLOCKS);
 
 
     //handlers

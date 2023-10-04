@@ -14,3 +14,4 @@ public class WillowTreeGrower extends AbstractTreeGrower {
         return ModConfiguredFeatures.WILLOW.getHolder().get();
     }
 }
+
