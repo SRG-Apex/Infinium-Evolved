@@ -42,8 +42,9 @@ authors="SRG-Apex" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Placeholder Description
+Expand the normal minecraft world with new materials, blocks, biomes, creatures, and bosses.
 
+Note: This mod is in active development so some features may be added, removed, or changed.
 
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.

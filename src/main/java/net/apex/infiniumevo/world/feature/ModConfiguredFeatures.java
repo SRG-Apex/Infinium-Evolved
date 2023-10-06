@@ -14,8 +14,10 @@ import net.apex.infiniumevo.block.ModBlocks;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -66,7 +68,7 @@ public class ModConfiguredFeatures {
             CONFIGURED_FEATURES.register("enchanted", () ->
                     new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                             BlockStateProvider.simple(ModBlocks.ENCHANTED_LOG.get()),
-                            new StraightTrunkPlacer(5, 6, 3),
+                            new StraightTrunkPlacer(7, 2, 2),
                             BlockStateProvider.simple(ModBlocks.ENCHANTED_LEAVES.get()),
                             new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                             new TwoLayersFeatureSize(1, 0, 2)).build()));

@@ -2,6 +2,7 @@ package net.apex.infiniumevo;
 
 import net.apex.infiniumevo.block.ModBlocks;
 import net.apex.infiniumevo.item.ModItems;
+import net.apex.infiniumevo.world.biome.ModBiomes;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,9 +37,11 @@ public class InfiniumEvo
       // Register the Deferred Register to the mod event bus so items and blocks get registered
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBiomes.register(modEventBus);
 
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

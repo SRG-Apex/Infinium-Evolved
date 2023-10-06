@@ -1,7 +1,7 @@
 {
     "parent": "minecraft:block/cube_column_horizontal",
     "textures": {
-      "end": "infiniumevo:block/stripped_dense_jungle_wood",
-      "side": "infiniumevo:block/stripped_dense_jungle_wood"
+      "end": "infiniumevo:block/stripped_dense_jungle_log",
+      "side": "infiniumevo:block/stripped_dense_jungle_log"
     }
   }
