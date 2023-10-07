@@ -29,7 +29,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
-import net.apex.infiniumevo.world.biome.EnchantedWoodsBiome;
 import net.apex.infiniumevo.InfiniumEvo;
 
 import java.util.Map;
@@ -48,6 +47,10 @@ public class ModBiomes {
     }
     public static final RegistryObject<Biome> ENCHANTED_WOODS = BIOMES.register("enchanted_woods", EnchantedWoodsBiome::createBiome);
 
+    public static final RegistryObject<Biome> WILLOW_WOODS = BIOMES.register("willow_woods", WillowWoodsBiome::createBiome);
+    public static final RegistryObject<Biome> DENSE_JUNGLE = BIOMES.register("dense_jungle", DenseJungleBiome::createBiome);
+
+
     @SubscribeEvent
     public static void onServerAboutToStart(ServerAboutToStartEvent event) {
         MinecraftServer server = event.getServer();
@@ -63,6 +66,10 @@ public class ModBiomes {
                     List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
                     for (Climate.ParameterPoint parameterPoint : EnchantedWoodsBiome.PARAMETER_POINTS) {
                         parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolderOrThrow(ResourceKey.create(Registry.BIOME_REGISTRY, ENCHANTED_WOODS.getId()))));
+
+                        parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolderOrThrow(ResourceKey.create(Registry.BIOME_REGISTRY, WILLOW_WOODS.getId()))));
+                        parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolderOrThrow(ResourceKey.create(Registry.BIOME_REGISTRY, DENSE_JUNGLE.getId()))));
+
                     }
 
                     chunkGenerator.biomeSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters), noiseSource.preset);
@@ -76,6 +83,9 @@ public class ModBiomes {
                     if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
                         List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
                         surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, ENCHANTED_WOODS.getId()), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
+                        surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, WILLOW_WOODS.getId()), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
+                        surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, DENSE_JUNGLE.getId()), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
+
                         NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
                                 noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
                                 noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
