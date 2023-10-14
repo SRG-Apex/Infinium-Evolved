@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:stripped_willow_log"
+    },
+    {
+      "item": "infiniumevo:stripped_willow_log"
+    },
+    {
+      "item": "infiniumevo:stripped_willow_log"
+    },
+    {
+      "item": "infiniumevo:stripped_willow_log"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:stripped_willow_wood",
+    "count": 1
+  }
+}

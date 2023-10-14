@@ -1,0 +1,7 @@
+{
+  "type": "forge:add_features",
+  "biomes": "infiniumevo:dense_jungle",
+  "features": "infiniumevo:infinium_ore_placed",
+  "step": "underground_ores"
+
+}

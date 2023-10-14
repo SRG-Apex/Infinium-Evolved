@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "C#C",
+    " E "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:egg"
+    },
+    "E": {
+      "item": "infiniumevo:enderite_block"
+    },
+    "C": {
+      "item": "infiniumevo:crystalite"
+    }
+  },
+  "result": {
+    "item": "infiniumevo:egg_core",
+    "count": 1
+  }
+}

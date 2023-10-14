@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "aa ",
+        "ad ",
         "ac ",
         " b "
     ],
@@ -14,7 +14,10 @@
         },
     "c":{
             "item":"infiniumevo:advanced_tool_handle"
-    }
+    },
+        "d": {
+            "item": "infiniumevo:titanium_block"
+        }
     },
     "result": {
         "item": "infiniumevo:crystalite_axe",

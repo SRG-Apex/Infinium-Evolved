@@ -38,6 +38,11 @@ public class ModPlacedFeatures {
                     commonOrePlacement(10,
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-64), VerticalAnchor.belowTop(-40)))));
 
+    public static final RegistryObject<PlacedFeature> INFINIUM_ORE_PLACED = PLACED_FEATURES.register("infinium_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.INFINIUM_ORE.getHolder().get(),
+                    commonOrePlacement(16,
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-64), VerticalAnchor.belowTop(-20)))));
+
     public static final RegistryObject<PlacedFeature> WILLOW_CHECKED = PLACED_FEATURES.register("willow_checked",
             () -> new PlacedFeature(ModConfiguredFeatures.WILLOW.getHolder().get(),
                     List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.WILLOW_SAPLING.get()))));

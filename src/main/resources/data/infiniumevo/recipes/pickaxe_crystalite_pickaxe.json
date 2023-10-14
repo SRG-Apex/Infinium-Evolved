@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "aaa",
+        "ada",
         " b ",
         " c "
     ],
@@ -14,7 +14,10 @@
         },
     "c": {
         "item": "minecraft:stick"
-    }
+    },
+        "d": {
+            "item": "infiniumevo:titanium_block"
+        }
     },
     "result": {
         "item": "infiniumevo:crystalite_pickaxe",

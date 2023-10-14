@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:stripped_enchanted_log"
+    },
+    {
+      "item": "infiniumevo:stripped_enchanted_log"
+    },
+    {
+      "item": "infiniumevo:stripped_enchanted_log"
+    },
+    {
+      "item": "infiniumevo:stripped_enchanted_log"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:stripped_enchanted_wood",
+    "count": 1
+  }
+}

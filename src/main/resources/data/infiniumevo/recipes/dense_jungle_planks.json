@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:dense_jungle_log"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:dense_jungle_planks",
+    "count": 4
+  }
+}

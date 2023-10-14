@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         " a ",
-        " a ",
+        " b ",
         " c "
     ],
     "key": {
@@ -11,7 +11,10 @@
         },
         "c":{
             "item":"infiniumevo:advanced_tool_handle"
-    }
+    },
+        "b": {
+            "item": "infiniumevo:titanium_block"
+        }
     },
     "result": {
         "item": "infiniumevo:crystalite_sword",

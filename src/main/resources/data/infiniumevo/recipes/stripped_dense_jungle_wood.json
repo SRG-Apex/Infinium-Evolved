@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:stripped_dense_jungle_log"
+    },
+    {
+      "item": "infiniumevo:stripped_dense_jungle_log"
+    },
+    {
+      "item": "infiniumevo:stripped_dense_jungle_log"
+    },
+    {
+      "item": "infiniumevo:stripped_dense_jungle_log"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:stripped_dense_jungle_wood",
+    "count": 1
+  }
+}

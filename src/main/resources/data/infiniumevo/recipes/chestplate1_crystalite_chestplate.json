@@ -1,13 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "a a",
-        "aaa",
+        "b b",
+        "aba",
         "aaa"
     ],
     "key": {
         "a": {
             "item": "infiniumevo:crystalite"
+        },
+        "b": {
+            "item": "infiniumevo:titanium_block"
         }
     },
     "result": {

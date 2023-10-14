@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:enchanted_log"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:enchanted_planks",
+    "count": 4
+  }
+}

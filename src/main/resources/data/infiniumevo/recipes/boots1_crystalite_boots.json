@@ -3,11 +3,14 @@
     "pattern": [
         "   ",
         "a a",
-        "a a"
+        "b b"
     ],
     "key": {
         "a": {
             "item": "infiniumevo:crystalite"
+        },
+        "b": {
+            "item": "infiniumevo:titanium_block"
         }
     },
     "result": {

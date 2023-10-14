@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:enchanted_log"
+    },
+    {
+      "item": "infiniumevo:enchanted_log"
+    },
+    {
+      "item": "infiniumevo:enchanted_log"
+    },
+    {
+      "item": "infiniumevo:enchanted_log"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:enchanted_wood",
+    "count": 1
+  }
+}

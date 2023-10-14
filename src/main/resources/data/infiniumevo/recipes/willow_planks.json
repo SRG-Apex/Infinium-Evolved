@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infiniumevo:willow_log"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:willow_planks",
+    "count": 4
+  }
+}

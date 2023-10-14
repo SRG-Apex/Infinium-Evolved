@@ -35,10 +35,10 @@ public class ModConfiguredFeatures {
     public static final RegistryObject<ConfiguredFeature<?, ?>> ALUMINIUM_ORE = CONFIGURED_FEATURES.register("aluminium_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ALUMINIUM_ORES.get(),12)));
 
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_ENDERITE_ORES = Suppliers.memoize(() -> List.of(
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> END_ENDERITE_ORES = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.ENDERITE_ORE.get().defaultBlockState())));
     public static final RegistryObject<ConfiguredFeature<?, ?>> ENDERITE_ORE = CONFIGURED_FEATURES.register("enderite_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ENDERITE_ORES.get(),7)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_ENDERITE_ORES.get(),7)));
 
     public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_TITANIUM_ORES = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.TITANIUM_ORE.get().defaultBlockState())));
@@ -49,6 +49,11 @@ public class ModConfiguredFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.CRYSTALITE_ORE.get().defaultBlockState())));
     public static final RegistryObject<ConfiguredFeature<?, ?>> CRYSTALITE_ORE = CONFIGURED_FEATURES.register("crystalite_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_CRYSTALITE_ORES.get(),7)));
+
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_INFINIUM_ORES = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.INFINIUM_ORE.get().defaultBlockState())));
+    public static final RegistryObject<ConfiguredFeature<?, ?>> INFINIUM_ORE = CONFIGURED_FEATURES.register("infinium_ore",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_INFINIUM_ORES.get(),12)));
 
     public static final RegistryObject<ConfiguredFeature<?,?>> WILLOW =
             CONFIGURED_FEATURES.register("willow", () ->
