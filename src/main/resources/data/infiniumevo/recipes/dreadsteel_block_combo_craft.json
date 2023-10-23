@@ -1,0 +1,30 @@
+{
+  "type": "extendedcrafting:combination",
+  "powerCost": 100000,
+  "input": {
+    "item": "minecraft:iron_block"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "item": "infiniumevo:grim_dust"
+    },
+    {
+      "item": "infiniumevo:grim_dust"
+    },
+    {
+      "item": "infiniumevo:grim_dust"
+    },
+    {
+      "item": "infiniumevo:grim_dust"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:dreadsteel_block"
+  }
+}

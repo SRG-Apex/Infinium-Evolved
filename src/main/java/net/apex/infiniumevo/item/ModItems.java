@@ -4,7 +4,6 @@ import net.apex.infiniumevo.InfiniumEvo;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -29,7 +28,7 @@ public class ModItems {
             ));
     public static final RegistryObject<Item> ALUMINIUMFRAME = ITEMS.register("aluminium_machine_frame",
             () -> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.IE_OTHER)
+                    //.tab(ModCreativeModeTab.IE_OTHER)
             ));
     public static final RegistryObject<Item> RAWALUMINIUM = ITEMS.register("raw_aluminium",
             ()-> new Item (new Item.Properties()
@@ -137,7 +136,7 @@ public class ModItems {
             ));
     public static final RegistryObject<Item> TITANIUMFRAME = ITEMS.register("titanium_machine_frame",
             () -> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.IE_OTHER)
+                   //.tab(ModCreativeModeTab.IE_OTHER)
             ));
     public static final RegistryObject<Item> RAWTITANIUM = ITEMS.register("raw_titanium",
             ()-> new Item (new Item.Properties()

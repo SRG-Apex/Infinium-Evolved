@@ -1,9 +1,9 @@
 package net.apex.infiniumevo.block;
 
+import net.apex.infiniumevo.InfiniumEvo;
 import net.apex.infiniumevo.block.custom.ModFlammablePillar;
 import net.apex.infiniumevo.item.ModCreativeModeTab;
 import net.apex.infiniumevo.item.ModItems;
-import net.apex.infiniumevo.InfiniumEvo;
 import net.apex.infiniumevo.world.feature.tree.DenseJungleTreeGrower;
 import net.apex.infiniumevo.world.feature.tree.EnchantedTreeGrower;
 import net.apex.infiniumevo.world.feature.tree.WillowTreeGrower;

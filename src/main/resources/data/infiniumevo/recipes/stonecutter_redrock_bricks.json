@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "infiniumevo:redrock"
-    },
-    "item": "infiniumevo:redrock_bricks",
-    "count": 1
-}
