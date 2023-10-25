@@ -7,7 +7,6 @@ import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.common.util.Lazy;
 
 import java.util.function.Supplier;
 
@@ -16,18 +15,18 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial{
 
 // Change Values
-    DREADSTEEL("dreadsteel",28,new int[]{4,10,12,6}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
-            3.0F, 0.0F, () -> Ingredient.of(ModItems.DREADSTEEL.get())
+    DREADSTEEL("dreadsteel",45,new int[]{4,10,12,6}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            3.0F, 0.1F, () -> Ingredient.of(ModItems.DREADSTEEL.get())
             ),
-    ENDERITE("enderite",28,new int[]{4,8,10,5}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+    ENDERITE("enderite",40,new int[]{4,8,10,5}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
             2.0F, 0.0F, () -> Ingredient.of(ModItems.ENDERITE.get())
             ),
-    CRYSTALITE("crystalite",28,new int[]{8,14,16,7}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
-            4.0F, 0.5F, () -> Ingredient.of(ModItems.CRYSTALITE.get())
+    CRYSTALITE("crystalite",55,new int[]{6,12,14,7}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            4.0F, 0.08F, () -> Ingredient.of(ModItems.CRYSTALITE.get())
             ),
 
-    INFINIUM("infinium",28,new int[]{14,16,18,12}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
-            5.0F, 0.5F, () -> Ingredient.of(ModItems.INFINIUM.get())
+    INFINIUM("infinium",60,new int[]{8,14,16,8}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            5.0F, 0.05F, () -> Ingredient.of(ModItems.INFINIUM.get())
             );
 
 

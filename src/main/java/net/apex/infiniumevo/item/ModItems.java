@@ -1,9 +1,11 @@
 package net.apex.infiniumevo.item;
 
 import net.apex.infiniumevo.InfiniumEvo;
+import net.apex.infiniumevo.entity.ModEntities;
 import net.apex.infiniumevo.item.custom.ReaperScytheItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -43,25 +45,25 @@ public class ModItems {
 
 // enderite Tools
     public static final RegistryObject<Item> ENDERITESWORD = ITEMS.register("enderite_sword",
-            () -> new SwordItem(Tiers.NETHERITE,13,0f, new Item.Properties()
+            () -> new SwordItem(Tiers.NETHERITE,6,0f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> ENDERITEPICK = ITEMS.register("enderite_pickaxe",
-            () -> new PickaxeItem(Tiers.NETHERITE,8,-1.5f, new Item.Properties()
+            () -> new PickaxeItem(Tiers.NETHERITE,4,-1.5f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
     public static final RegistryObject<Item> ENDERITEAXE = ITEMS.register("enderite_axe",
-            () -> new AxeItem(Tiers.NETHERITE,19,-2f, new Item.Properties()
+            () -> new AxeItem(Tiers.NETHERITE,8,-2f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> ENDERITESPADE = ITEMS.register("enderite_spade",
-            () -> new ShovelItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+            () -> new ShovelItem(Tiers.NETHERITE,3,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
     public static final RegistryObject<Item> ENDERITEHOE = ITEMS.register("enderite_hoe",
-            () -> new HoeItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+            () -> new HoeItem(Tiers.NETHERITE,1,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
@@ -95,21 +97,21 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> DREADSTEELPICK = ITEMS.register("dreadsteel_pickaxe",
-            () -> new PickaxeItem(Tiers.NETHERITE,8,-1.5f, new Item.Properties()
+            () -> new PickaxeItem(Tiers.NETHERITE,7,-1.5f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
     public static final RegistryObject<Item> DREADSTEELAXE = ITEMS.register("dreadsteel_axe",
-            () -> new AxeItem(Tiers.NETHERITE,19,-2f, new Item.Properties()
+            () -> new AxeItem(Tiers.NETHERITE,10,-2f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> DREADSTEELSPADE = ITEMS.register("dreadsteel_spade",
-            () -> new ShovelItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+            () -> new ShovelItem(Tiers.NETHERITE,3,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
     public static final RegistryObject<Item> DREADSTEELHOE = ITEMS.register("dreadsteel_hoe",
-            () -> new HoeItem(Tiers.NETHERITE,5,-1f, new Item.Properties()
+            () -> new HoeItem(Tiers.NETHERITE,3,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
@@ -158,12 +160,12 @@ public class ModItems {
 
     // crystalite Tools
     public static final RegistryObject<Item> CRYSTALITESWORD = ITEMS.register("crystalite_sword",
-            () -> new SwordItem(ModToolTiers.T5,13,0f, new Item.Properties()
+            () -> new SwordItem(ModToolTiers.T5,10,0f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
     public static final RegistryObject<Item> CRYSTALITEAXE = ITEMS.register("crystalite_axe",
-            () -> new AxeItem(ModToolTiers.T5,19,-2f, new Item.Properties()
+            () -> new AxeItem(ModToolTiers.T5,15,-2f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> CRYSTALITESPADE = ITEMS.register("crystalite_spade",
@@ -172,7 +174,7 @@ public class ModItems {
             ));
 
     public static final RegistryObject<Item> CRYSTALITEHOE = ITEMS.register("crystalite_hoe",
-            () -> new HoeItem(ModToolTiers.T5,5,-1f, new Item.Properties()
+            () -> new HoeItem(ModToolTiers.T5,4,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
@@ -202,7 +204,7 @@ public class ModItems {
 
     // Infinium Tools
     public static final RegistryObject<Item> INFINIUMSWORD = ITEMS.register("infinium_sword",
-            () -> new SwordItem(ModToolTiers.T6,13,0f, new Item.Properties()
+            () -> new SwordItem(ModToolTiers.T6,12,0f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> INFINIUMPICK = ITEMS.register("infinium_pickaxe",
@@ -211,7 +213,7 @@ public class ModItems {
             ));
 
     public static final RegistryObject<Item> INFINIUMAXE = ITEMS.register("infinium_axe",
-            () -> new AxeItem(ModToolTiers.T6,19,-2f, new Item.Properties()
+            () -> new AxeItem(ModToolTiers.T6,16,-2f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> INFINIUMSPADE = ITEMS.register("infinium_spade",
@@ -251,6 +253,8 @@ public class ModItems {
             ));
 
     public static final RegistryObject<Item> REAPER_SCYTHE = ITEMS.register("reaper_scythe", () -> new ReaperScytheItem());
+    public static final RegistryObject<Item> REAPER_SPAWN_EGG = ITEMS.register("reaper_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.REAPER, -6710887, -10066330, new Item.Properties().tab(ModCreativeModeTab.IE_OTHER)));
+
 
 
 

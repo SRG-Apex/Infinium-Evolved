@@ -91,6 +91,8 @@
   "item.infiniumevo.titanium_ingot": "Titanium Ingot",
   "item.infiniumevo.titanium_machine_frame": "Titanium Machine Frame",
   "item.infiniumevo.reaper_scythe": "Reaper Scythe",
+  "item.infiniumevo.reaper_spawn_egg": "Reaper Spawn Egg",
+  "entity.infiniumevo.reaper": "Reaper",
   "itemGroup.blocks": "IE Blocks",
   "itemGroup.items": "IE Items",
   "itemGroup.other": "IE Misc.",
