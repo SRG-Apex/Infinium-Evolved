@@ -1,6 +1,7 @@
 package net.apex.infiniumevo.item;
 
 import net.apex.infiniumevo.InfiniumEvo;
+import net.apex.infiniumevo.item.custom.ReaperScytheItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -248,6 +249,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
             ));
+
+    public static final RegistryObject<Item> REAPER_SCYTHE = ITEMS.register("reaper_scythe", () -> new ReaperScytheItem());
+
+
 
 
 

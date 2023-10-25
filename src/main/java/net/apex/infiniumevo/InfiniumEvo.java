@@ -2,6 +2,7 @@ package net.apex.infiniumevo;
 
 import com.mojang.logging.LogUtils;
 import net.apex.infiniumevo.block.ModBlocks;
+import net.apex.infiniumevo.entity.ModEntities;
 import net.apex.infiniumevo.item.ModItems;
 import net.apex.infiniumevo.world.biome.ModBiomes;
 import net.apex.infiniumevo.world.feature.ModConfiguredFeatures;
@@ -37,6 +38,7 @@ public class InfiniumEvo
       // Register the Deferred Register to the mod event bus so items and blocks get registered
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.REGISTRY.register(modEventBus);
 
         ModBiomes.register(modEventBus);
 
