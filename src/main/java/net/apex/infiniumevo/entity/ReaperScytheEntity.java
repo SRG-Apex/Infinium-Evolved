@@ -87,8 +87,8 @@ public class ReaperScytheEntity extends AbstractArrow implements ItemSupplier {
         double dz = target.getZ() - entity.getZ();
         entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1.3f * 2, 12.0F);
         entityarrow.setSilent(true);
-        entityarrow.setBaseDamage(7);
-        entityarrow.setKnockback(2);
+        entityarrow.setBaseDamage(6);
+        entityarrow.setKnockback(1);
         entityarrow.setCritArrow(false);
         entity.level.addFreshEntity(entityarrow);
         entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), Objects.requireNonNull(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot"))), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));

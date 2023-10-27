@@ -1,7 +1,5 @@
 package net.apex.infiniumevo.entity;
 
-/* imports omitted */
-
 import net.apex.infiniumevo.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.protocol.Packet;
@@ -11,7 +9,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
@@ -34,7 +31,7 @@ public class ReaperEntity extends Monster implements RangedAttackMob {
     public ReaperEntity(EntityType<ReaperEntity> type, Level world) {
         super(type, world);
         maxUpStep = 0.6f;
-        xpReward = 0;
+        xpReward = 5000;
         setNoAi(false);
 
         setPersistenceRequired();
@@ -52,24 +49,21 @@ public class ReaperEntity extends Monster implements RangedAttackMob {
     protected void registerGoals() {
         super.registerGoals();
 
-        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true) {
+        // Melee Goal
 
-            @Override
-            protected double getAttackReachSqr(LivingEntity entity) {
-                return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
-            }
 
-        });
-        this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
-        this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-        this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-
-        this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10f) {
+        this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 12, 10f) {
             @Override
             public boolean canContinueToUse() {
                 return this.canUse();
             }
         });
+
+
+
+        this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
+        this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
+        this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
     }
 
     @Override
@@ -133,15 +127,15 @@ public class ReaperEntity extends Monster implements RangedAttackMob {
 
     public static AttributeSupplier.Builder createAttributes() {
         AttributeSupplier.Builder builder = Mob.createMobAttributes();
-        builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-        builder = builder.add(Attributes.MAX_HEALTH, 50);
-        builder = builder.add(Attributes.ARMOR, 14);
+        builder = builder.add(Attributes.MOVEMENT_SPEED, 0.4);
+        builder = builder.add(Attributes.MAX_HEALTH, 75);
+        builder = builder.add(Attributes.ARMOR, 24);
         builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
         builder = builder.add(Attributes.FOLLOW_RANGE, 32);
 
         builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 
-        builder = builder.add(Attributes.ATTACK_KNOCKBACK, 2);
+        builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
 
         return builder;
     }
