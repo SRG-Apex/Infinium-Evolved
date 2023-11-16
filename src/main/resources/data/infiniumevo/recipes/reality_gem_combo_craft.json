@@ -1,0 +1,37 @@
+{
+  "type": "extendedcrafting:combination",
+  "powerCost": 500000,
+  "input": {
+    "item": "infiniumevo:crystalite"
+  },
+  "ingredients": [
+    {
+      "item": "infiniumevo:aero_essence"
+    },
+    {
+      "item": "infiniumevo:aqua_essence"
+    },
+    {
+      "item": "infiniumevo:terra_essence"
+    },
+    {
+      "item": "infiniumevo:blaze_essence"
+    },
+    {
+      "item": "infiniumevo:infinium_ingot"
+    },
+    {
+      "item": "infiniumevo:infinium_ingot"
+    },
+    {
+      "item": "infiniumevo:infinium_ingot"
+    },
+    {
+      "item": "infiniumevo:infinium_ingot"
+    }
+  ],
+  "result": {
+    "amount": 4,
+    "item": "infiniumevo:reality_gem"
+  }
+}

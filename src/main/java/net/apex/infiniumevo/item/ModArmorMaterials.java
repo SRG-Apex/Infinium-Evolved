@@ -27,6 +27,10 @@ public enum ModArmorMaterials implements ArmorMaterial{
 
     INFINIUM("infinium",60,new int[]{8,14,16,8}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
             5.0F, 0.05F, () -> Ingredient.of(ModItems.INFINIUM.get())
+            ),
+
+    REALITY("reality",70,new int[]{12,18,20,10}, 19, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            6.5F, 0.08F, () -> Ingredient.of(ModItems.REALITY_GEM.get())
             );
 
 

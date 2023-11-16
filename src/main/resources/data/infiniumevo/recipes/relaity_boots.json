@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "infiniumevo:reality_gem"
+    }
+  },
+  "result": {
+    "item": "infiniumevo:reality_boots",
+    "count": 1
+  }
+}

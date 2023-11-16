@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    " T "
+  ],
+  "key": {
+    "#": {
+      "item": "infiniumevo:reality_gem"
+    },
+    "T": {
+      "item": "infiniumevo:godly_tool_handle"
+    }
+  },
+  "result": {
+    "item": "infiniumevo:reality_morningstar",
+    "count": 1
+  }
+}

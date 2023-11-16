@@ -17,9 +17,12 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_T8_TOOL
                 = tag("needs_t8_tool");
 
+
+
         private static TagKey<Block> tag(String name){
             return BlockTags.create(new ResourceLocation(InfiniumEvo.MOD_ID, name));
         }
+
 
         private static TagKey<Block> forgeTag(String name){
             return BlockTags.create(new ResourceLocation("forge", name));

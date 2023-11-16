@@ -48,6 +48,11 @@ public class DenseJungleBiome {
 
         BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 
+        BiomeDefaultFeatures.addJungleGrass(biomeGenerationSettings);
+        BiomeDefaultFeatures.addForestFlowers(biomeGenerationSettings);
+        BiomeDefaultFeatures.addDefaultFlowers(biomeGenerationSettings);
+
+
         MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
 
         return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).temperature(0.5f).downfall(0.9f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();

@@ -71,6 +71,13 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.IE_BLOCKS);
 
+    public static final RegistryObject<Block> REALITY_BLOCK = registerBlock("reality_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    //Add other Properties Here
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
     public static final RegistryObject<Block> ALUMINIUM_ORE = registerBlock("aluminium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .requiresCorrectToolForDrops()
                     //Add other Properties Here
@@ -314,6 +321,18 @@ public class ModBlocks {
                     return 5;
                 }
             },
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> JUNGLE_BRICK_CRACKED = registerBlock("cracked_jungle_infused_brick", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            ),
+    ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> JUNGLE_BRICK = registerBlock("jungle_infused_brick", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            ),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> JUNGLE_STONE = registerBlock("jungle_infused_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            ),
             ModCreativeModeTab.IE_BLOCKS);
 
 

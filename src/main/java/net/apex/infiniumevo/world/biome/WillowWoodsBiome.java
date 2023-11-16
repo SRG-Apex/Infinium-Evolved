@@ -11,7 +11,6 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
@@ -51,7 +50,11 @@ public class WillowWoodsBiome {
             BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
             BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
             BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
-            MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
+        BiomeDefaultFeatures.addJungleGrass(biomeGenerationSettings);
+        BiomeDefaultFeatures.addForestFlowers(biomeGenerationSettings);
+        BiomeDefaultFeatures.addDefaultFlowers(biomeGenerationSettings);
+
+        MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
             return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
         }
 

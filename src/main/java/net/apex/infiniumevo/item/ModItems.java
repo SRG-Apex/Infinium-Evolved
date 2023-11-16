@@ -2,6 +2,7 @@ package net.apex.infiniumevo.item;
 
 import net.apex.infiniumevo.InfiniumEvo;
 import net.apex.infiniumevo.entity.ModEntities;
+import net.apex.infiniumevo.item.custom.MultiToolItem;
 import net.apex.infiniumevo.item.custom.ReaperScytheItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -45,7 +46,7 @@ public class ModItems {
 
 // enderite Tools
     public static final RegistryObject<Item> ENDERITESWORD = ITEMS.register("enderite_sword",
-            () -> new SwordItem(Tiers.NETHERITE,6,0f, new Item.Properties()
+            () -> new SwordItem(Tiers.NETHERITE,8,0f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> ENDERITEPICK = ITEMS.register("enderite_pickaxe",
@@ -153,28 +154,28 @@ public class ModItems {
                     .tab(ModCreativeModeTab.IE_ITEMS)
             ));
     public static final RegistryObject<Item> CRYSTALITEPICK = ITEMS.register("crystalite_pickaxe",
-            ()-> new PickaxeItem(ModToolTiers.T5, 5, -1.5f, new Item.Properties()
+            ()-> new PickaxeItem(ModToolTiers.CRYSTALITE_TIER, 5, -1.5f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
 
             ));
 
     // crystalite Tools
     public static final RegistryObject<Item> CRYSTALITESWORD = ITEMS.register("crystalite_sword",
-            () -> new SwordItem(ModToolTiers.T5,10,0f, new Item.Properties()
+            () -> new SwordItem(ModToolTiers.CRYSTALITE_TIER,16,0f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
     public static final RegistryObject<Item> CRYSTALITEAXE = ITEMS.register("crystalite_axe",
-            () -> new AxeItem(ModToolTiers.T5,15,-2f, new Item.Properties()
+            () -> new AxeItem(ModToolTiers.CRYSTALITE_TIER,15,-2f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> CRYSTALITESPADE = ITEMS.register("crystalite_spade",
-            () -> new ShovelItem(ModToolTiers.T5,5,-1f, new Item.Properties()
+            () -> new ShovelItem(ModToolTiers.CRYSTALITE_TIER,5,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
     public static final RegistryObject<Item> CRYSTALITEHOE = ITEMS.register("crystalite_hoe",
-            () -> new HoeItem(ModToolTiers.T5,4,-1f, new Item.Properties()
+            () -> new HoeItem(ModToolTiers.CRYSTALITE_TIER,4,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
@@ -204,25 +205,25 @@ public class ModItems {
 
     // Infinium Tools
     public static final RegistryObject<Item> INFINIUMSWORD = ITEMS.register("infinium_sword",
-            () -> new SwordItem(ModToolTiers.T6,12,0f, new Item.Properties()
+            () -> new SwordItem(ModToolTiers.INFINIUM_TIER,24,0f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> INFINIUMPICK = ITEMS.register("infinium_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.T6,8,-1.5f, new Item.Properties()
+            () -> new PickaxeItem(ModToolTiers.INFINIUM_TIER,8,-1.5f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
     public static final RegistryObject<Item> INFINIUMAXE = ITEMS.register("infinium_axe",
-            () -> new AxeItem(ModToolTiers.T6,16,-2f, new Item.Properties()
+            () -> new AxeItem(ModToolTiers.INFINIUM_TIER,16,-2f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
     public static final RegistryObject<Item> INFINIUMSPADE = ITEMS.register("infinium_spade",
-            () -> new ShovelItem(ModToolTiers.T6,5,-1f, new Item.Properties()
+            () -> new ShovelItem(ModToolTiers.INFINIUM_TIER,5,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
     public static final RegistryObject<Item> INFINIUMHOE = ITEMS.register("infinium_hoe",
-            () -> new HoeItem(ModToolTiers.T6,5,-1f, new Item.Properties()
+            () -> new HoeItem(ModToolTiers.INFINIUM_TIER,5,-1f, new Item.Properties()
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
@@ -255,10 +256,57 @@ public class ModItems {
     public static final RegistryObject<Item> REAPER_SCYTHE = ITEMS.register("reaper_scythe", () -> new ReaperScytheItem());
     public static final RegistryObject<Item> REAPER_SPAWN_EGG = ITEMS.register("reaper_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.REAPER, -6710887, -10066330, new Item.Properties().tab(ModCreativeModeTab.IE_OTHER)));
 
+    // 1.1.0 items
+    public static final RegistryObject<Item> REALITY_GEM = ITEMS.register("reality_gem",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)    ));
 
+    public static final RegistryObject<Item> BLAZE_ESSENCE = ITEMS.register("blaze_essence",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)    ));
 
+    public static final RegistryObject<Item> AQUA_ESSENCE = ITEMS.register("aqua_essence",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)    ));
 
+    public static final RegistryObject<Item> TERRA_ESSENCE = ITEMS.register("terra_essence",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)    ));
 
+    public static final RegistryObject<Item> AERO_ESSENCE = ITEMS.register("aero_essence",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)    ));
+
+    public static final RegistryObject<Item> GODLY_TOOL_HANDLE = ITEMS.register("godly_tool_handle",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+
+    // Infinium Tools
+    public static final RegistryObject<Item> REALITY_KATAR = ITEMS.register("reality_katar",
+            () -> new SwordItem(ModToolTiers.REALITY_TIER,30,0f, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<MultiToolItem> REALITY_MORNINGSTAR = ITEMS.register("reality_morningstar",
+            () -> new MultiToolItem(ModToolTiers.REALITY_TIER, new Item.Properties().tab(ModCreativeModeTab.IE_TOOLS))
+            );
+
+    public static final RegistryObject<Item> REALITY_HELM = ITEMS.register("reality_helmet",
+            () -> new ArmorItem(ModArmorMaterials.REALITY, EquipmentSlot.HEAD, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> REALITY_CHEST = ITEMS.register("reality_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.REALITY, EquipmentSlot.CHEST, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> REALITY_LEGS = ITEMS.register("reality_leggings",
+            () -> new ArmorItem(ModArmorMaterials.REALITY, EquipmentSlot.LEGS, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
+    public static final RegistryObject<Item> REALITY_BOOTS = ITEMS.register("reality_boots",
+            () -> new ArmorItem(ModArmorMaterials.REALITY, EquipmentSlot.FEET, new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_TOOLS)
+            ));
 
 
     public static void register(IEventBus eventBus) {
