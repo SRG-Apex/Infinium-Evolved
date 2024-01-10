@@ -1,0 +1,13 @@
+{
+    "variants": {
+      "type=bottom": {
+        "model": "infiniumevo:block/enchanted_slab"
+      },
+      "type=double": {
+        "model": "infiniumevo:block/enchanted_block"
+      },
+      "type=top": {
+        "model": "infiniumevo:block/enchanted_slab_top"
+      }
+    }
+  }

@@ -207,6 +207,83 @@ public class ModBlocks {
             },
             ModCreativeModeTab.IE_BLOCKS);
 
+    public static final RegistryObject<Block> willow_FENCE = registerBlock("willow_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)
+                    .requiresCorrectToolForDrops()){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            }, ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> willow_FENCE_GATE = registerBlock("willow_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
+                    .requiresCorrectToolForDrops()){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            }, ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> willow_SLAB = registerBlock("willow_slab", ()-> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)
+                    .requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> willow_STAIRS = registerBlock("willow_stairs", ()-> new StairBlock(()-> ModBlocks.DENSE_JUNGLE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
 
     public static final RegistryObject<Block> DENSE_JUNGLE_LOG = registerBlock("dense_jungle_log", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .requiresCorrectToolForDrops()
@@ -265,6 +342,98 @@ public class ModBlocks {
                 }
             },
             ModCreativeModeTab.IE_BLOCKS);
+
+    /*
+
+    public static final RegistryObject<Block> DENSE_JUNGLE_DOOR = registerBlock("dense_jungle_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)
+            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> DENSE_JUNGLE_TRAPDOOR = registerBlock("dense_jungle_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)
+                    .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.IE_BLOCKS);
+
+
+     */
+
+    public static final RegistryObject<Block> DENSE_JUNGLE_SLAB = registerBlock("dense_jungle_slab", ()-> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)
+                    .requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
+
+
+
+    public static final RegistryObject<Block> DENSE_JUNGLE_STAIRS = registerBlock("dense_jungle_stairs", ()-> new StairBlock(()-> ModBlocks.DENSE_JUNGLE_PLANKS.get().defaultBlockState(),
+            BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> DENSE_JUNGLE_FENCE = registerBlock("dense_jungle_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)
+                    .requiresCorrectToolForDrops()){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            }, ModCreativeModeTab.IE_BLOCKS);
+    public static final RegistryObject<Block> DENSE_JUNGLE_FENCE_GATE = registerBlock("dense_jungle_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
+                   .requiresCorrectToolForDrops()){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            }, ModCreativeModeTab.IE_BLOCKS);
     public static final RegistryObject<Block> ENCHANTED_LOG = registerBlock("enchanted_log", ()-> new ModFlammablePillar(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .requiresCorrectToolForDrops()
             ),
@@ -304,6 +473,84 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.IE_BLOCKS);
     public static final RegistryObject<Block> ENCHANTED_PLANKS = registerBlock("enchanted_planks", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> enchanted_FENCE = registerBlock("enchanted_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)
+                    .requiresCorrectToolForDrops()){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            }, ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> enchanted_FENCE_GATE = registerBlock("enchanted_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
+                    .requiresCorrectToolForDrops()){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            }, ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> enchanted_STAIRS = registerBlock("enchanted_stairs", ()-> new StairBlock(()-> ModBlocks.DENSE_JUNGLE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).requiresCorrectToolForDrops()
+            ){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
+            ModCreativeModeTab.IE_BLOCKS);
+
+    public static final RegistryObject<Block> enchanted_SLAB = registerBlock("enchanted_slab", ()-> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)
                     .requiresCorrectToolForDrops()
             ){
                 @Override

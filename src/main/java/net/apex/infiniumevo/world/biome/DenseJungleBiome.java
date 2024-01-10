@@ -12,8 +12,10 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.MegaJungleFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.MegaJungleTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
@@ -38,9 +40,16 @@ public class DenseJungleBiome {
         biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
                 PlacementUtils.register("infiniumevo:tree_dense_jungle",
                         FeatureUtils.register("infiniumevo:tree_dense_jungle", Feature.TREE,
-                                new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.DENSE_JUNGLE_LOG.get()), new MegaJungleTrunkPlacer(7, 2, 19), BlockStateProvider.simple(ModBlocks.DENSE_JUNGLE_LEAVES.get()),
+                                new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.DENSE_JUNGLE_LOG.get()), new MegaJungleTrunkPlacer(7, 2, 16), BlockStateProvider.simple(ModBlocks.DENSE_JUNGLE_LEAVES.get()),
                                         new MegaJungleFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2), new TwoLayersFeatureSize(1, 1, 2)).ignoreVines().build()),
                         List.of(CountPlacement.of(5), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
+
+        biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+                PlacementUtils.register("infiniumevo:tree_dense_jungle_mini",
+                        FeatureUtils.register("infiniumevo:tree_dense_jungle_mini", Feature.TREE,
+                                new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.DENSE_JUNGLE_LOG.get()), new DarkOakTrunkPlacer(3, 2, 3), BlockStateProvider.simple(ModBlocks.DENSE_JUNGLE_LEAVES.get()),
+                                        new DarkOakFoliagePlacer(ConstantInt.of(1), ConstantInt.of(0)), new TwoLayersFeatureSize(1, 1, 2)).ignoreVines().build()),
+                        List.of(CountPlacement.of(3), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
 
         BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 

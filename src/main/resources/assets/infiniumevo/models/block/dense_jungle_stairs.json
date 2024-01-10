@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/stairs",
+    "textures": {
+      "bottom": "infiniumevo:block/dense_jungle_planks",
+      "top": "infiniumevo:block/dense_jungle_planks",
+      "side": "infiniumevo:block/dense_jungle_planks"
+    }
+  }

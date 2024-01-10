@@ -1,8 +1,8 @@
 package net.apex.infiniumevo.item;
 
+import net.apex.infiniumevo.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.apex.infiniumevo.block.ModBlocks;
 
 public class ModCreativeModeTab {
 
@@ -32,6 +32,7 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.ALUMINIUMFRAME.get());
         }
     };
+
 
 
 }

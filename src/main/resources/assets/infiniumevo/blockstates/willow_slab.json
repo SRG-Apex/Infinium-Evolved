@@ -1,0 +1,13 @@
+{
+    "variants": {
+      "type=bottom": {
+        "model": "infiniumevo:block/willow_slab"
+      },
+      "type=double": {
+        "model": "infiniumevo:block/willow_block"
+      },
+      "type=top": {
+        "model": "infiniumevo:block/willow_slab_top"
+      }
+    }
+  }
