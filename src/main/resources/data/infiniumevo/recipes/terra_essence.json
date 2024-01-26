@@ -1,0 +1,24 @@
+{
+  "type": "extendedcrafting:combination",
+  "powerCost": 200000,
+  "input": {
+    "item": "infiniumevo:essence_base"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:coal"
+    },
+     {
+      "item": "minecraft:deepslate"
+    },
+       {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:terra_essence"
+  }
+}

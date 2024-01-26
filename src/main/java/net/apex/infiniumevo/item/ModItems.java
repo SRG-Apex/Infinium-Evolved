@@ -308,7 +308,12 @@ public class ModItems {
                     .tab(ModCreativeModeTab.IE_TOOLS)
             ));
 
+    public static final RegistryObject<Item> ESSENCE_BASE = ITEMS.register("essence_base",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+    ));
 
+    // Register function to add items to regestry
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

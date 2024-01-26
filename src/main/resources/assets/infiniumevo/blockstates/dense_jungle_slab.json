@@ -4,7 +4,7 @@
         "model": "infiniumevo:block/dense_jungle_slab"
       },
       "type=double": {
-        "model": "infiniumevo:block/dense_jungle_planks "
+        "model": "infiniumevo:block/dense_jungle_planks"
       },
       "type=top": {
         "model": "infiniumevo:block/dense_jungle_slab_top"

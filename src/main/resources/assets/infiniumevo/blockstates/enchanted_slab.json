@@ -4,7 +4,7 @@
         "model": "infiniumevo:block/enchanted_slab"
       },
       "type=double": {
-        "model": "infiniumevo:block/enchanted_block"
+        "model": "infiniumevo:block/enchanted_planks"
       },
       "type=top": {
         "model": "infiniumevo:block/enchanted_slab_top"

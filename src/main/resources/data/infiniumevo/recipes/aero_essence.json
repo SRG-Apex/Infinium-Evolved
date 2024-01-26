@@ -1,0 +1,24 @@
+{
+  "type": "extendedcrafting:combination",
+  "powerCost": 200000,
+  "input": {
+    "item": "infiniumevo:essence_base"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:phantom_membrane"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    },
+     {
+      "item": "minecraft:phantom_membrane"
+    },
+       {
+      "item": "minecraft:ghast_tear"
+    }
+  ],
+  "result": {
+    "item": "infiniumevo:aero_essence"
+  }
+}
