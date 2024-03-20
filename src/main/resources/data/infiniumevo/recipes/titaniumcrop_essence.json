@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mysticalagriculture:titaniumcrop_essence"
+    }},
+  "result": {
+    "item": "infiniumevo:titanium_ingot",
+    "count": 3
+  }}

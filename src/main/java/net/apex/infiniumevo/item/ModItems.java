@@ -313,6 +313,81 @@ public class ModItems {
                     .tab(ModCreativeModeTab.IE_ITEMS)
     ));
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Void
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    /*
+    StarMaterial ingot
+    Star Material Raw
+    Singularity Essence
+    Self Contained Sigularity
+    Gravitas Essence
+    Jungle Essence
+    Unstable Sigularity
+    Void Fragment
+    Void Ingot
+    Condensed Star Material
+    Condensed Gravitas Essence
+     */
+
+    public static final RegistryObject<Item> StarMaterialIngot = ITEMS.register("star_material_ingot",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> StarMaterialRaw = ITEMS.register("raw_star_material",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> SINGULARITY_ESSENCE = ITEMS.register("singularity_essence",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> STABLE_SINGULARITY = ITEMS.register("stable_singularity",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> UNSTABLE_SINGULARITY = ITEMS.register("unstable_singularity",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+
+    public static final RegistryObject<Item> GRAVITAS_ESSENCE = ITEMS.register("gravitas_essence",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+
+
+    public static final RegistryObject<Item> JUNGLE_ESSENCE = ITEMS.register("jungle_essence",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+
+
+    public static final RegistryObject<Item> VOID_FRAGMENT = ITEMS.register("void_fragment",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+
+
+    public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+    public static final RegistryObject<Item> CONDENSED_STAR_MAT = ITEMS.register("condensed_star_material",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+
+
+    public static final RegistryObject<Item> CONDENSED_GRAV_ESSENCE = ITEMS.register("condensed_gravitas_essence",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.IE_ITEMS)
+            ));
+
+
+
+
     // Register function to add items to regestry
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

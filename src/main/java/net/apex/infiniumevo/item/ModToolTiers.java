@@ -33,7 +33,7 @@ public class ModToolTiers {
                 new ResourceLocation(InfiniumEvo.MOD_ID, "infinium"), List.of(Tiers.NETHERITE), List.of());
 
         REALITY_TIER = TierSortingRegistry.registerTier(
-                new ForgeTier(6, 10000, 150f, 3f, 24,
+                new ForgeTier(7, 10000, 150f, 3f, 24,
                         ModTags.Blocks.NEEDS_T7_TOOL, () -> Ingredient.of(ModItems.REALITY_GEM.get())),
                 new ResourceLocation(InfiniumEvo.MOD_ID, "reality"), List.of(Tiers.NETHERITE), List.of());
 /*

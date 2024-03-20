@@ -529,6 +529,16 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.IE_BLOCKS);
 
+    //VOID BLOCKS
+
+    /*
+    Star Material Ore
+    Comet Material Block
+    Star Material Block
+    Void Ingot Block
+    Star Forge
+     */
+
 
 
     //handlers
