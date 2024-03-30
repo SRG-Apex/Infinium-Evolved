@@ -339,10 +339,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)
             ));
-    public static final RegistryObject<Item> SINGULARITY_ESSENCE = ITEMS.register("singularity_essence",
-            () -> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.IE_ITEMS)
-            ));
     public static final RegistryObject<Item> STABLE_SINGULARITY = ITEMS.register("stable_singularity",
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.IE_ITEMS)

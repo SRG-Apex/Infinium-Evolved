@@ -14,9 +14,6 @@ public class ModTags {
                 = tag("needs_t6_tool");
         public static final TagKey<Block> NEEDS_T7_TOOL
                 = tag("needs_t7_tool");
-        public static final TagKey<Block> NEEDS_T8_TOOL
-                = tag("needs_t8_tool");
-
 
 
         private static TagKey<Block> tag(String name){

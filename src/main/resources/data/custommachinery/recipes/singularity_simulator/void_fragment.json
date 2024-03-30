@@ -1,0 +1,66 @@
+{
+  "type": "custommachinery:custom_machine",
+  "machine": "custommachinery:singularity_simulator",
+  "time": 2400,
+  "requirements": [
+    {
+      "type": "custommachinery:item",
+      "item": "infiniumevo:jungle_essence",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "infiniumevo:unstable_singularity",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "infiniumevo:jungle_essence",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "infiniumevo:unstable_singularity",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "infiniumevo:jungle_essence",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "infiniumevo:unstable_singularity",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "infiniumevo:jungle_essence",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "infiniumevo:unstable_singularity",
+      "amount": 1,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:energy_per_tick",
+      "amount": 3500,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "infiniumevo:unstable_singularity",
+      "amount": 1,
+      "mode": "output"
+    }
+  ]
+}
