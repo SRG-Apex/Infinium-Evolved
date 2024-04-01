@@ -1,60 +1,24 @@
 {
   "type": "custommachinery:custom_machine",
   "machine": "custommachinery:singularity_simulator",
-  "time": 1200,
+  "time": 75,
   "requirements": [
     {
       "type": "custommachinery:item",
       "item": "infiniumevo:condensed_star_material",
-      "amount": 1,
-      "mode": "input"
-    },
-    {
-      "type": "custommachinery:item",
-      "item": "infiniumevo:condensed_star_material",
-      "amount": 1,
-      "mode": "input"
-    },
-    {
-      "type": "custommachinery:item",
-      "item": "infiniumevo:condensed_star_material",
-      "amount": 1,
-      "mode": "input"
-    },
-    {
-      "type": "custommachinery:item",
-      "item": "infiniumevo:condensed_star_material",
-      "amount": 1,
+      "amount": 4,
       "mode": "input"
     },
 
     {
       "type": "custommachinery:item",
       "item": "infiniumevo:stable_singularity",
-      "amount": 1,
-      "mode": "input"
-    },
-    {
-    "type": "custommachinery:item",
-    "item": "infiniumevo:stable_singularity",
-    "amount": 1,
-    "mode": "input"
-    },
-    {
-    "type": "custommachinery:item",
-    "item": "infiniumevo:stable_singularity",
-    "amount": 1,
-    "mode": "input"
-    },
-    {
-      "type": "custommachinery:item",
-      "item": "infiniumevo:stable_singularity",
-      "amount": 1,
+      "amount": 4,
       "mode": "input"
     },
     {
       "type": "custommachinery:energy_per_tick",
-      "amount": 3500,
+      "amount": 350000,
       "mode": "input"
     },
     {
